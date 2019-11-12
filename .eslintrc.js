@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   root: true,
   parser: 'babel-eslint',
@@ -13,7 +15,8 @@ module.exports = {
     'plugin:ember/recommended'
   ],
   env: {
-    browser: true
+    browser: true,
+    es6: true,
   },
   rules: {
     'ember/no-jquery': 'error'
@@ -23,6 +26,8 @@ module.exports = {
     {
       files: [
         '.eslintrc.js',
+        '.prettierrc.js',
+        '.release-it.js',
         '.template-lintrc.js',
         'ember-cli-build.js',
         'index.js',
