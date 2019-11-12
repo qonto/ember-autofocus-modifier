@@ -1,7 +1,7 @@
 qonto-autofocus
 ==============================================================================
 
-[Short description of the addon.]
+This is a simple modifier to handle the autofocus of your inputs and other elements.
 
 
 Compatibility
@@ -16,14 +16,12 @@ Installation
 ------------------------------------------------------------------------------
 
 ```
-ember install qonto-autofocus
+ember install ember-autofocus-modifier
 ```
 
 
 Usage
 ------------------------------------------------------------------------------
-
-This is a simple modifier to handle the autofocus of your inputs and other elements.
 
 <div>By default, it will search for the first non-disabled input in the dom node that it has been attached to.</div>
 <div>You can specify a custom selector to target other element as the first positional parameter.</div> 
