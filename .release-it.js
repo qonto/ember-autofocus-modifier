@@ -1,4 +1,3 @@
-const { GITHUB_TOKEN } = process.env;
 
 module.exports = {
   git: {
@@ -15,6 +14,6 @@ module.exports = {
   github: {
     release: true,
     releaseName: 'Release ${version}',
-    tokenRef: GITHUB_TOKEN,
+    tokenRef: 'GITHUB_TOKEN',
   },
 };
