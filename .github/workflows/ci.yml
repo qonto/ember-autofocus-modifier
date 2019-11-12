@@ -1,0 +1,11 @@
+name: ci
+on: push
+jobs:
+  tests:
+    steps:
+      - name: Install
+        run: yarn install --frozen-lockfile
+      - name: lint
+        run: yarn lint
+      - name: Test
+        run: COVERAGE=true ember exam --split=8 --parallel
