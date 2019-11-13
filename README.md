@@ -76,7 +76,11 @@ Installation
 ------------------------------------------------------------------------------
 
 ```
-ember install ember-autofocus-modifier
+yarn add -D ember-autofocus-modifier
+```
+or 
+```
+npm install --save-dev ember-autofocus-modifier
 ```
 
 
