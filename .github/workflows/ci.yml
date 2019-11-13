@@ -9,11 +9,41 @@ on:
       - '*'
 
 jobs:
-  tests:
+  lint:
+    runs-on: ubuntu-latest
     steps:
-      - name: Install
-        run: yarn install --frozen-lockfile
-      - name: lint
-        run: yarn lint
-      - name: Test
-        run: COVERAGE=true ember exam --split=8 --parallel
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 8.x
+      - name: Install dependencies
+        run: yarn --frozen-lockfile
+      - name: Lint javascript code
+        run: yarn lint:js
+      - name: Lint handlebars code
+        run: yarn lint:hbs
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 8.x
+      - name: Install dependencies
+        run: yarn install
+      - name: Run tests
+        run: yarn test
+
+  floating-dependencies:
+    needs: [lint, test]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 8.x
+      - name: Install dependencies w/o lockfile
+        run: yarn install --no-lockfile --non-interactive
+      - name: Run tests
+        run: yarn test
