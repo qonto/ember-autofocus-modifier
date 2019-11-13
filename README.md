@@ -1,15 +1,25 @@
 ember-autofocus-modifier
 ==============================================================================
 
-This is a simple modifier to handle the autofocus of your inputs and other elements.
+Your ember component has just been rendered. Have you ever wanted to focus an
+element in the DOM right after that? Like focusing this lonely input on your
+page? Or like focusing a full-screen modal's close button?
+
+This package wraps a modifier to autofocus an element in the DOM. It works for
+inputs and for other elements.
+
+As an alternative to installing this package, you might want to consider using
+[this snippet](https://github.com/qonto/ember-autofocus-modifier/blob/v0.0.1/addon/modifiers/autofocus.js).
 
 
 Usage
 ------------------------------------------------------------------------------
 
-<div>By default, it will search for the first non-disabled input in the dom node that it has been attached to.</div>
-<div>You can specify a custom selector to target other element as the first positional parameter.</div> 
-<div>If no child is found, then it will try to focus the element itself.</div>
+By default, it will search for the first non-disabled input in the dom node that it has been attached to.
+
+You can specify a custom selector to target other element as the first positional parameter.
+
+If no child is found, then it will try to focus the element itself.
 
 ## Examples
 
