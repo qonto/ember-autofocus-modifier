@@ -2,10 +2,10 @@
 module.exports = {
   git: {
     tagName: 'v${version}',
-    changelog: 'yarn lerna-changelog',
+    changelog: 'lerna-changelog',
   },
   hooks: {
-    'after:bump': 'yarn lerna-changelog',
+    'after:bump': 'lerna-changelog >> CHANGELOG.md',
   },
   npm: {
     publish: true,
