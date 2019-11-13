@@ -1,4 +1,4 @@
-qonto-autofocus
+ember-autofocus-modifier
 ==============================================================================
 
 This is a simple modifier to handle the autofocus of your inputs and other elements.
