@@ -4,22 +4,6 @@ ember-autofocus-modifier
 This is a simple modifier to handle the autofocus of your inputs and other elements.
 
 
-Compatibility
-------------------------------------------------------------------------------
-
-* Ember.js v3.4 or above
-* Ember CLI v2.13 or above
-* Node.js v8 or above
-
-
-Installation
-------------------------------------------------------------------------------
-
-```
-ember install ember-autofocus-modifier
-```
-
-
 Usage
 ------------------------------------------------------------------------------
 
@@ -76,6 +60,23 @@ Here, the autofocus will be applied to the button
   <button {{autofocus}} type="submit" />
 </form>
 ```
+
+
+Installation
+------------------------------------------------------------------------------
+
+```
+ember install ember-autofocus-modifier
+```
+
+
+Compatibility
+------------------------------------------------------------------------------
+
+* Ember.js v3.4 or above
+* Ember CLI v2.13 or above
+* Node.js v8 or above
+
 
 Contributing
 ------------------------------------------------------------------------------
