@@ -36,7 +36,6 @@ jobs:
         run: yarn test
 
   floating-dependencies:
-    needs: [lint, test]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
