@@ -23,7 +23,7 @@ jobs:
       - name: Lint handlebars code
         run: yarn lint:hbs
 
-  test:
+  basic-tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -31,12 +31,28 @@ jobs:
         with:
           node-version: 8.x
       - name: Install dependencies
-        run: yarn install
+        run: yarn --frozen-lockfile
       - name: Run tests
         run: yarn test
 
+  ember-try:
+    needs: [lint, basic-tests]
+    strategy:
+      matrix:
+        ember: [lts-3.4, lts-3.8, release, beta, canary]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 8.x
+      - name: Install dependencies
+        run: yarn --frozen-lockfile
+      - name: Run tests for ember-${{ matrix.ember }}
+        run: yarn ember try:one ember-${{ matrix.ember }}
+
   floating-dependencies:
-    needs: [lint, test]
+    needs: [lint, basic-tests]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
