@@ -1,12 +1,13 @@
-<h2 id="title">
+<h1 id="title">
   A whole form with autofocus:
-</h2>
+</h1>
 
-<form {{autofocus}}>
-  <a href="#">link</a>
-  <input placeholder="first focusable input">
-  <input placeholder="second input">
-  <button>Button</button>
+<form>
+  <label for="first-input">Email</label>
+  <input id="first-input" type="email" placeholder="first focusable input" {{autofocus}}>
+  <label for="second-input">Password</label>
+  <input id="second-input" type="password" placeholder="second input">
+  <button id="first-button" type="submit">
+    A button
+  </button>
 </form>
-
-{{outlet}}
