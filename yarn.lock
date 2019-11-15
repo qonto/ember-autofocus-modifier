@@ -8714,18 +8714,6 @@ terser@^4.3.9:
     source-map "~0.6.1"
     source-map-support "~0.5.12"
 
-testem-gitlab-reporter@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/testem-gitlab-reporter/-/testem-gitlab-reporter-1.0.0.tgz#60b24cfa006c5e3816e611ccbbbd2c28f02923dc"
-  integrity sha512-GUVWEDUjwAIfsK+zn39ZOW2lFeKgu8TIefIMl5hxd4GQXmQYTUCgKteTU4Hp6XYma50vmwn2ZAo4guuvqYGvgw==
-  dependencies:
-    xmlbuilder "^13.0.2"
-
-testem-multi-reporter@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/testem-multi-reporter/-/testem-multi-reporter-1.2.0.tgz#e93abdee54f821eb464232aba6b6483f2802664e"
-  integrity sha512-ttIds/wpU0njpRBQsDl+tcPOy8jvafad6MCEIy21+BpNEcpCBZWrYuNva8TtxaZcoLuFTW0B8FsWl6XuJfH3rQ==
-
 testem@^2.17.0:
   version "2.17.0"
   resolved "https://registry.yarnpkg.com/testem/-/testem-2.17.0.tgz#1cb4a2a90524a088803dfe52fbf197a6fd73c883"
@@ -9429,11 +9417,6 @@ xdg-basedir@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/xdg-basedir/-/xdg-basedir-4.0.0.tgz#4bc8d9984403696225ef83a1573cbbcb4e79db13"
   integrity sha512-PSNhEJDejZYV7h50BohL09Er9VaIefr2LMAf3OEmpCkjOi34eYyQYAXUTjEQtZJTKcF0E2UKTh+osDLsgNim9Q==
-
-xmlbuilder@^13.0.2:
-  version "13.0.2"
-  resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-13.0.2.tgz#02ae33614b6a047d1c32b5389c1fdacb2bce47a7"
-  integrity sha512-Eux0i2QdDYKbdbA6AM6xE4m6ZTZr4G4xF9kahI2ukSEMCzwce2eX9WlTI5J3s+NU7hpasFsr8hWIONae7LluAQ==
 
 xmldom@^0.1.19:
   version "0.1.27"

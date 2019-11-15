@@ -62,9 +62,7 @@
     "loader.js": "^4.7.0",
     "prettier": "^1.19.1",
     "qunit-dom": "^0.9.0",
-    "release-it": "^12.4.3",
-    "testem-gitlab-reporter": "^1.0.0",
-    "testem-multi-reporter": "^1.2.0"
+    "release-it": "^12.4.3"
   },
   "engines": {
     "node": "8.* || >= 10.*"
