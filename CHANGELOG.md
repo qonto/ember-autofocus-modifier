@@ -14,7 +14,7 @@
 - Anass OUMIRI ([@aoumiri](https://github.com/aoumiri))
 - Cyrille David ([@dcyriller](https://github.com/dcyriller))
 
-## Unreleased (2019-11-25)
+## v0.1.1 (2019-11-25)
 
 #### :house: Internal
 * [#11](https://github.com/qonto/ember-autofocus-modifier/pull/11) Add a dependabot configuration ([@dcyriller](https://github.com/dcyriller))
