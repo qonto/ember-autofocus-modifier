@@ -23,3 +23,15 @@
 - Anass OUMIRI ([@aoumiri](https://github.com/aoumiri))
 - Cyrille David ([@dcyriller](https://github.com/dcyriller))
 - [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
+
+## v1.0.0 (2020-01-03)
+
+#### :boom: Breaking Change
+* [#35](https://github.com/qonto/ember-autofocus-modifier/pull/35) 💥 Drop node 8 support  ([@dbendaou](https://github.com/dbendaou))
+
+#### :house: Internal
+* [#36](https://github.com/qonto/ember-autofocus-modifier/pull/36) 🔥 remove travis file config ([@dbendaou](https://github.com/dbendaou))
+
+#### Committers: 2
+- Djamel B. ([@dbendaou](https://github.com/dbendaou))
+- [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
