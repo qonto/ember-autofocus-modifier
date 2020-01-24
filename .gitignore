@@ -26,3 +26,4 @@
 
 # intelliJ
 .idea
+.npmrc
