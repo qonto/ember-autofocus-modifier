@@ -8,4 +8,4 @@ update_configs:
     automerged_updates:
       - match:
           update_type: "in_range"
-    version_requirement_updates: "auto"
+    version_requirement_updates: "increase_versions"
