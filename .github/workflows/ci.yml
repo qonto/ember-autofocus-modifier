@@ -1,5 +1,8 @@
 name: ci
 
+env:
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
 on:
   pull_request:
   push:
