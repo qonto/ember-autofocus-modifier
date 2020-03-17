@@ -97,4 +97,19 @@ module('Integration | Modifier | autofocus', function(hooks) {
 
     assert.dom('[data-test-input-6]').isFocused('The custom selected element is focused');
   });
+
+  test('should focus a referenced element', async function (assert) {
+    await render(hbs`
+      <div {{autofocus this.input2}}>
+        <span>this is not a focusable element</span>
+        <button data-test-button>this is a button</button>
+        <input data-test-input-1 />
+        <input data-test-input-2 {{ref this "input2"}} />
+        <input data-test-input-3 />
+      </div>
+    `);
+
+    assert.dom('[data-test-input-1]').isNotFocused('The first input is not focused');
+    assert.dom('[data-test-input-2]').isFocused('The second input is focused');
+  });
 });
