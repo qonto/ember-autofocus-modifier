@@ -62,7 +62,7 @@
     "loader.js": "^4.7.0",
     "prettier": "^2.0.2",
     "qunit-dom": "^1.1.0",
-    "release-it": "^12.6.2"
+    "release-it": "^13.5.7"
   },
   "engines": {
     "node": "10.* || >= 12.*"
