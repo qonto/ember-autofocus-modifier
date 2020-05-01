@@ -60,7 +60,7 @@
     "eslint-plugin-node": "^11.1.0",
     "lerna-changelog": "^1.0.1",
     "loader.js": "^4.7.0",
-    "prettier": "^2.0.2",
+    "prettier": "^2.0.5",
     "qunit-dom": "^1.2.0",
     "release-it": "^13.5.7"
   },
