@@ -77,7 +77,7 @@
       "dependencies": ":pushpin: Dependency",
       "documentation": ":pencil: Documentation",
       "enhancement": ":zap: Improvement Features",
-      "internal": ":house-with-garden: Dependency",
+      "internal": ":house_with_garden: Internal",
       "refactoring": ":shirt: Refactoring",
       "security": ":lock: Security Fixes"
     }
