@@ -37,7 +37,7 @@
 - [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
 
 
-## Unreleased (2020-08-12)
+## 1.1.0 (2020-08-12)
 
 #### :pushpin: Dependency
 * [#108](https://github.com/qonto/ember-autofocus-modifier/pull/108) chore(deps-dev): bump ember-source-channel-url from 2.0.1 to 3.0.0 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
@@ -54,7 +54,7 @@
 * [#67](https://github.com/qonto/ember-autofocus-modifier/pull/67) chore(deps-dev): bump ember-source from 3.16.3 to 3.17.2 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 * [#65](https://github.com/qonto/ember-autofocus-modifier/pull/65) chore(deps-dev): bump prettier from 1.19.1 to 2.0.2 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 
-#### :house-with-garden: Dependency
+#### :house_with_garden: Dependency
 * [#114](https://github.com/qonto/ember-autofocus-modifier/pull/114) chore: update lerna-changelog labels for proper changelogs ([@aoumiri](https://github.com/aoumiri))
 
 #### Committers: 2
