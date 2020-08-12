@@ -69,5 +69,17 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
+  },
+  "changelog": {
+    "labels": {
+      "breaking": ":boom: Breaking Change",
+      "bug": ":bug: Bug Fixes",
+      "dependencies": ":pushpin: Dependency",
+      "documentation": ":pencil: Documentation",
+      "enhancement": ":zap: Improvement Features",
+      "internal": ":house-with-garden: Dependency",
+      "refactoring": ":shirt: Refactoring",
+      "security": ":lock: Security Fixes"
+    }
   }
 }
