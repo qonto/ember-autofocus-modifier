@@ -1,6 +1,8 @@
 import { modifier } from 'ember-modifier';
 
-export default modifier(function autofocus(element, [selector = 'input:not([disabled])']) {
+const DEFAULT_SELECTOR = 'input:not([disabled]),textarea:not([disabled])';
+
+export default modifier(function autofocus(element, [selector = DEFAULT_SELECTOR]) {
   const childElement = element.querySelector(selector);
 
   if (childElement) {
