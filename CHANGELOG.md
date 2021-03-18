@@ -60,3 +60,7 @@
 #### Committers: 2
 - Anass OUMIRI ([@aoumiri](https://github.com/aoumiri))
 - [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
+Version 9 of Highlight.js has reached EOL and is no longer supported.
+Please upgrade or ask whatever dependency you are using to upgrade.
+https://github.com/highlightjs/highlight.js/issues/2877
+
