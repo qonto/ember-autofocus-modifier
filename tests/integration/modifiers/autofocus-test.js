@@ -97,4 +97,16 @@ module('Integration | Modifier | autofocus', function(hooks) {
 
     assert.dom('[data-test-input-6]').isFocused('The custom selected element is focused');
   });
+
+  test('should give focus to the first included textarea that is not disabled', async function(assert) {
+    await render(hbs`
+      <form {{autofocus}}>
+        <textarea data-test-textarea="disabled" disabled />
+        <textarea data-test-textarea="enabled" />
+        <input data-test-input="enabled" />
+      </form>
+    `);
+
+    assert.dom('[data-test-textarea="enabled"]').isFocused('The first enabled textarea is focused');
+  });
 });
