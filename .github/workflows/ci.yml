@@ -42,7 +42,7 @@ jobs:
     needs: [lint, basic-tests]
     strategy:
       matrix:
-        ember: [lts-3.4, lts-3.8, release, beta, canary]
+        ember: [lts-3.8, release, beta, canary]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
