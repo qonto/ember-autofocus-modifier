@@ -58,7 +58,7 @@ module('Integration | Modifier | autofocus', function(hooks) {
 
     assert.dom('[data-test-input-1]').isNotFocused('The first non related input are not focused');
     assert.dom('[data-test-input-2]').isNotFocused('The second non related input are not focused');
-    assert.dom('[data-test-input-2]').isNotFocused('The third non related input are not focused');
+    assert.dom('[data-test-input-3]').isNotFocused('The third non related input are not focused');
   });
 
   test('should focus element according to a custom selector if given', async function(assert) {
