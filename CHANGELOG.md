@@ -64,3 +64,22 @@ Version 9 of Highlight.js has reached EOL and is no longer supported.
 Please upgrade or ask whatever dependency you are using to upgrade.
 https://github.com/highlightjs/highlight.js/issues/2877
 
+Version 9 of Highlight.js has reached EOL and is no longer supported.
+Please upgrade or ask whatever dependency you are using to upgrade.
+https://github.com/highlightjs/highlight.js/issues/2877
+
+## Unreleased (2021-05-21)
+
+#### :pushpin: Dependency
+* [#174](https://github.com/qonto/ember-autofocus-modifier/pull/174) chore(deps-dev): bump ember-source from 3.25.3 to 3.26.1 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#177](https://github.com/qonto/ember-autofocus-modifier/pull/177) chore(deps-dev): bump release-it from 14.4.1 to 14.6.1 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#183](https://github.com/qonto/ember-autofocus-modifier/pull/183) chore(deps): bump handlebars from 4.7.6 to 4.7.7 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#184](https://github.com/qonto/ember-autofocus-modifier/pull/184) chore(deps): bump ssri from 7.1.0 to 7.1.1 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#178](https://github.com/qonto/ember-autofocus-modifier/pull/178) chore(deps): bump ember-cli-babel from 7.23.1 to 7.26.4 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#169](https://github.com/qonto/ember-autofocus-modifier/pull/169) chore(deps-dev): bump release-it from 13.7.0 to 14.4.1 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+* [#171](https://github.com/qonto/ember-autofocus-modifier/pull/171) chore(deps-dev): bump ember-source from 3.21.3 to 3.25.3 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+* [#170](https://github.com/qonto/ember-autofocus-modifier/pull/170) chore(deps-dev): bump ember-cli from 3.20.0 to 3.25.2 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
+#### Committers: 2
+- Davide Ferrero ([@davideferre](https://github.com/davideferre))
+- [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
