@@ -83,3 +83,22 @@ https://github.com/highlightjs/highlight.js/issues/2877
 #### Committers: 2
 - Davide Ferrero ([@davideferre](https://github.com/davideferre))
 - [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
+Version 9 of Highlight.js has reached EOL and is no longer supported.
+Please upgrade or ask whatever dependency you are using to upgrade.
+https://github.com/highlightjs/highlight.js/issues/2877
+
+## Unreleased (2021-05-25)
+
+#### :boom: Breaking Change
+* [#188](https://github.com/qonto/ember-autofocus-modifier/pull/188) Drop support for ember lts-3.4 ([@aoumiri](https://github.com/aoumiri))
+
+#### :pushpin: Dependency
+* [#176](https://github.com/qonto/ember-autofocus-modifier/pull/176) chore(deps-dev): bump ember-cli-htmlbars from 5.6.2 to 5.7.1 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#181](https://github.com/qonto/ember-autofocus-modifier/pull/181) chore(deps-dev): bump eslint-plugin-ember from 8.13.0 to 10.4.1 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#175](https://github.com/qonto/ember-autofocus-modifier/pull/175) chore(deps-dev): bump ember-cli from 3.25.2 to 3.26.1 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#182](https://github.com/qonto/ember-autofocus-modifier/pull/182) chore(deps): bump underscore from 1.9.1 to 1.13.1 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#186](https://github.com/qonto/ember-autofocus-modifier/pull/186) chore(deps-dev): bump eslint from 7.21.0 to 7.26.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#187](https://github.com/qonto/ember-autofocus-modifier/pull/187) chore(deps-dev): bump ember-template-lint from 2.21.0 to 3.4.2 ([@dependabot[bot]](https://github.com/apps/dependabot))
+
+#### Committers: 1
+- Anass OUMIRI ([@aoumiri](https://github.com/aoumiri))
