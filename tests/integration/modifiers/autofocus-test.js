@@ -110,9 +110,9 @@ module('Integration | Modifier | autofocus', function(hooks) {
     assert.dom('[data-test-textarea="enabled"]').isFocused('The first enabled textarea is focused');
   });
 
-  test('should not focus due to disabled parameter set to true', async function(assert) {
+  test('should not focus due to disabled parameter set to true providing a selector', async function(assert) {
     await render(hbs`
-      <div {{autofocus 'input:not([disabled]),textarea:not([disabled])' true}}>
+      <div {{autofocus 'input:not([disabled])' disabled=true}}>
         <span>this is not a focusable element</span>
         <button data-test-button>this is a button</button>
         <input data-test-input-1 />
@@ -123,6 +123,40 @@ module('Integration | Modifier | autofocus', function(hooks) {
 
     assert.dom('[data-test-button]').isNotFocused('The button element is not focused');
     assert.dom('[data-test-input-1]').isNotFocused('The first non related input are not focused');
+    assert.dom('[data-test-input-2]').isNotFocused('The second non related input are not focused');
+    assert.dom('[data-test-input-3]').isNotFocused('The third non related input are not focused');
+  });
+
+  test('should not focus due to disabled parameter set to true without providing a selector', async function(assert) {
+    await render(hbs`
+      <div {{autofocus disabled=true}}>
+        <span>this is not a focusable element</span>
+        <button data-test-button>this is a button</button>
+        <input data-test-input-1 />
+        <input data-test-input-2 />
+        <input data-test-input-3 />
+      </div>
+    `);
+
+    assert.dom('[data-test-button]').isNotFocused('The button element is not focused');
+    assert.dom('[data-test-input-1]').isNotFocused('The first non related input are not focused');
+    assert.dom('[data-test-input-2]').isNotFocused('The second non related input are not focused');
+    assert.dom('[data-test-input-3]').isNotFocused('The third non related input are not focused');
+  });
+
+  test('should focus due to disabled parameter set to false', async function(assert) {
+    await render(hbs`
+      <div {{autofocus disabled=false}}>
+        <span>this is not a focusable element</span>
+        <button data-test-button>this is a button</button>
+        <input data-test-input-1 />
+        <input data-test-input-2 />
+        <input data-test-input-3 />
+      </div>
+    `);
+
+    assert.dom('[data-test-input-1]').isFocused('The first non related input are not focused');
+    assert.dom('[data-test-button]').isNotFocused('The button element is not focused');
     assert.dom('[data-test-input-2]').isNotFocused('The second non related input are not focused');
     assert.dom('[data-test-input-3]').isNotFocused('The third non related input are not focused');
   });
