@@ -102,3 +102,24 @@ https://github.com/highlightjs/highlight.js/issues/2877
 
 #### Committers: 1
 - Anass OUMIRI ([@aoumiri](https://github.com/aoumiri))
+Version 9 of Highlight.js has reached EOL and is no longer supported.
+Please upgrade or ask whatever dependency you are using to upgrade.
+https://github.com/highlightjs/highlight.js/issues/2877
+
+## Unreleased (2021-10-13)
+
+#### :pushpin: Dependency
+* [#208](https://github.com/qonto/ember-autofocus-modifier/pull/208) chore(deps-dev): bump prettier from 2.3.0 to 2.3.2 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#205](https://github.com/qonto/ember-autofocus-modifier/pull/205) chore(deps-dev): bump ember-cli-inject-live-reload from 2.0.2 to 2.1.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#198](https://github.com/qonto/ember-autofocus-modifier/pull/198) chore(deps): bump y18n from 4.0.0 to 4.0.3 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#199](https://github.com/qonto/ember-autofocus-modifier/pull/199) chore(deps-dev): bump eslint from 7.26.0 to 7.28.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#200](https://github.com/qonto/ember-autofocus-modifier/pull/200) chore(deps-dev): bump release-it from 14.6.1 to 14.8.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#194](https://github.com/qonto/ember-autofocus-modifier/pull/194) chore(deps): bump ember-cli-babel from 7.26.4 to 7.26.6 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#196](https://github.com/qonto/ember-autofocus-modifier/pull/196) chore(deps-dev): bump prettier from 2.2.1 to 2.3.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#189](https://github.com/qonto/ember-autofocus-modifier/pull/189) chore(deps): bump ws from 7.4.2 to 7.4.6 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#193](https://github.com/qonto/ember-autofocus-modifier/pull/193) chore(deps-dev): bump eslint-plugin-ember from 10.4.1 to 10.5.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#195](https://github.com/qonto/ember-autofocus-modifier/pull/195) chore(deps): bump ember-modifier from 2.1.1 to 2.1.2 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#197](https://github.com/qonto/ember-autofocus-modifier/pull/197) chore(deps): bump glob-parent from 5.1.0 to 5.1.2 ([@dependabot[bot]](https://github.com/apps/dependabot))
+
+#### Committers: 1
+- Davide Ferrero ([@davideferre](https://github.com/davideferre))
