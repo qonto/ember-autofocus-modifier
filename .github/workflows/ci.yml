@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
-          node-version: 10.x
+          node-version: 12.x
       - name: Install dependencies
         run: yarn --frozen-lockfile
       - name: Lint javascript code
@@ -32,7 +32,7 @@ jobs:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
-          node-version: 10.x
+          node-version: 12.x
       - name: Install dependencies
         run: yarn --frozen-lockfile
       - name: Run tests
@@ -48,7 +48,7 @@ jobs:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
-          node-version: 10.x
+          node-version: 12.x
       - name: Install dependencies
         run: yarn --frozen-lockfile
       - name: Run tests for ember-${{ matrix.ember }}
@@ -61,7 +61,7 @@ jobs:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
-          node-version: 10.x
+          node-version: 12.x
       - name: Install dependencies w/o lockfile
         run: yarn install --no-lockfile --non-interactive
       - name: Run tests
