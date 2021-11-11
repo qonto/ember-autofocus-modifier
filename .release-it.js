@@ -1,4 +1,3 @@
-
 module.exports = {
   git: {
     tagName: 'v${version}',
