@@ -1,7 +1,6 @@
 import { render } from '@ember/test-helpers';
 import { setupRenderingTest } from 'ember-qunit';
 import { module, test } from 'qunit';
-import { gte } from 'ember-compatibility-helpers';
 
 import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
@@ -205,41 +204,39 @@ module('Integration | Modifier | autofocus', function (hooks) {
       .isNotFocused('The third non related input are not focused');
   });
 
-  if (gte('3.16.0')) {
-    test('should not cause rerender assertions on Glimmer components when a focus modifier is present', async function (assert) {
-      class FooButtonComponent extends Component {
-        @tracked bar;
+  test('should not cause rerender assertions on Glimmer components when a focus modifier is present', async function (assert) {
+    class FooButtonComponent extends Component {
+      @tracked bar;
 
-        @action
-        updateBar() {
-          this.bar = !this.bar;
-        }
+      @action
+      updateBar() {
+        this.bar = !this.bar;
       }
-      setComponentTemplate(
-        hbs`
-        <button
-          {{on "focus" this.updateBar}}
-          ...attributes
-        >
-          Foo: {{this.bar}}
-        </button>
-      `,
-        FooButtonComponent
-      );
-      this.owner.register('component:foo-button', FooButtonComponent);
+    }
+    setComponentTemplate(
+      hbs`
+      <button
+        {{on "focus" this.updateBar}}
+        ...attributes
+      >
+        Foo: {{this.bar}}
+      </button>
+    `,
+      FooButtonComponent
+    );
+    this.owner.register('component:foo-button', FooButtonComponent);
 
-      await render(hbs`
-        <div {{autofocus "input,button"}}>
-          <span>this is not a focusable element</span>
-          <FooButton data-test-foo/>
-          <input data-test-input-1 />
-        </div>
-      `);
+    await render(hbs`
+      <div {{autofocus "input,button"}}>
+        <span>this is not a focusable element</span>
+        <FooButton data-test-foo/>
+        <input data-test-input-1 />
+      </div>
+    `);
 
-      assert.dom('[data-test-foo]').isFocused('The button element is focused');
-      assert
-        .dom('[data-test-input-1]')
-        .isNotFocused('The first non related input is not focused');
-    });
-  }
+    assert.dom('[data-test-foo]').isFocused('The button element is focused');
+    assert
+      .dom('[data-test-input-1]')
+      .isNotFocused('The first non related input is not focused');
+  });
 });
