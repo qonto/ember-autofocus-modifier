@@ -1,4 +1,5 @@
 import { modifier } from 'ember-modifier';
+import { next } from '@ember/runloop';
 
 const DEFAULT_SELECTOR = 'input:not([disabled]),textarea:not([disabled])';
 
@@ -13,9 +14,11 @@ export default modifier(function autofocus(
 
   const childElement = element.querySelector(selector);
 
-  if (childElement) {
-    childElement.focus();
-  } else {
-    element.focus();
-  }
+  next(function () {
+    if (childElement) {
+      childElement.focus();
+    } else {
+      element.focus();
+    }
+  });
 });
