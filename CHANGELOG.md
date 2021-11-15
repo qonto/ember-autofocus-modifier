@@ -123,3 +123,19 @@ https://github.com/highlightjs/highlight.js/issues/2877
 
 #### Committers: 1
 - Davide Ferrero ([@davideferre](https://github.com/davideferre))
+Version 9 of Highlight.js has reached EOL and is no longer supported.
+Please upgrade or ask whatever dependency you are using to upgrade.
+https://github.com/highlightjs/highlight.js/issues/2877
+
+## Unreleased (2021-11-15)
+
+#### :boom: Breaking Change
+* [#235](https://github.com/qonto/ember-autofocus-modifier/pull/235) Drop node 10 support ([@nickschot](https://github.com/nickschot))
+
+#### :pushpin: Dependency
+* [#245](https://github.com/qonto/ember-autofocus-modifier/pull/245) Update ember-modifier to v3 ([@nickschot](https://github.com/nickschot))
+* [#241](https://github.com/qonto/ember-autofocus-modifier/pull/241) Run ember-cli-update to update to 3.28 blueprint ([@nickschot](https://github.com/nickschot))
+* [#240](https://github.com/qonto/ember-autofocus-modifier/pull/240) Add auto-import/webpack dev dependencies to make beta/canary scenarios work ([@nickschot](https://github.com/nickschot))
+
+#### Committers: 1
+- Nick Schot ([@nickschot](https://github.com/nickschot))
