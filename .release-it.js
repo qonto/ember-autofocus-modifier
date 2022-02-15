@@ -1,18 +1,19 @@
 module.exports = {
+  plugins: {
+    'release-it-lerna-changelog': {
+      infile: 'CHANGELOG.md',
+    },
+  },
   git: {
+    commitMessage: 'v${version}',
     tagName: 'v${version}',
-    changelog: 'lerna-changelog',
-  },
-  hooks: {
-    'after:bump': 'lerna-changelog >> CHANGELOG.md',
-  },
-  npm: {
-    publish: true,
-    publishPath: '.',
   },
   github: {
     release: true,
     releaseName: 'Release ${version}',
     tokenRef: 'GITHUB_AUTH',
+  },
+  npm: {
+    publish: false,
   },
 };
