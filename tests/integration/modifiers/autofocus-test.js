@@ -42,6 +42,22 @@ module('Integration | Modifier | autofocus', function (hooks) {
       .isFocused('The first enabled input is focused');
   });
 
+  test('should focus the first included input that is not readonly', async function (assert) {
+    await render(hbs`
+      <div {{autofocus}}>
+        <span>this is not a focusable element</span>
+        <button data-test-button>this is a button</button>
+        <input data-test-input-1 readonly />
+        <input data-test-input-2 readonly />
+        <input data-test-input-3 />
+      </div>
+    `);
+
+    assert
+      .dom('[data-test-input-3]')
+      .isFocused('The first enabled input is focused');
+  });
+
   test('should focus the root element if no children are found', async function (assert) {
     await render(hbs`
       <input data-test-input {{autofocus}} />
@@ -119,6 +135,20 @@ module('Integration | Modifier | autofocus', function (hooks) {
     await render(hbs`
       <form {{autofocus}}>
         <textarea data-test-textarea="disabled" disabled />
+        <textarea data-test-textarea="enabled" />
+        <input data-test-input="enabled" />
+      </form>
+    `);
+
+    assert
+      .dom('[data-test-textarea="enabled"]')
+      .isFocused('The first enabled textarea is focused');
+  });
+
+  test('should give focus to the first included textarea that is not readonly', async function (assert) {
+    await render(hbs`
+      <form {{autofocus}}>
+        <textarea data-test-textarea="readonly" readonly />
         <textarea data-test-textarea="enabled" />
         <input data-test-input="enabled" />
       </form>
