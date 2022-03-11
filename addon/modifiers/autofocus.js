@@ -1,7 +1,8 @@
 import { modifier } from 'ember-modifier';
 import { next } from '@ember/runloop';
 
-const DEFAULT_SELECTOR = 'input:not([disabled]),textarea:not([disabled])';
+const DEFAULT_SELECTOR =
+  'input:not([disabled]):not([readonly]),textarea:not([disabled]):not([readonly])';
 
 export default modifier(function autofocus(
   element,
