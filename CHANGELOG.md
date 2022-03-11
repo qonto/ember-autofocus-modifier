@@ -139,3 +139,23 @@ https://github.com/highlightjs/highlight.js/issues/2877
 
 #### Committers: 1
 - Nick Schot ([@nickschot](https://github.com/nickschot))
+
+## Unreleased (2022-03-11)
+
+#### :pushpin: Dependency
+* [#250](https://github.com/qonto/ember-autofocus-modifier/pull/250) chore(deps-dev): bump ember-maybe-import-regenerator from 0.1.6 to 1.0.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#247](https://github.com/qonto/ember-autofocus-modifier/pull/247) chore(deps-dev): bump ember-try from 1.4.0 to 2.0.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#255](https://github.com/qonto/ember-autofocus-modifier/pull/255) chore(deps-dev): bump prettier from 2.4.1 to 2.5.1 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#259](https://github.com/qonto/ember-autofocus-modifier/pull/259) chore(deps-dev): bump webpack from 5.64.0 to 5.64.4 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#258](https://github.com/qonto/ember-autofocus-modifier/pull/258) chore(deps-dev): bump ember-cli-htmlbars from 5.7.1 to 6.0.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#260](https://github.com/qonto/ember-autofocus-modifier/pull/260) chore(deps-dev): bump release-it from 14.11.7 to 14.11.8 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#246](https://github.com/qonto/ember-autofocus-modifier/pull/246) chore(deps-dev): bump eslint-plugin-qunit from 7.0.0 to 7.1.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#248](https://github.com/qonto/ember-autofocus-modifier/pull/248) chore(deps-dev): bump @embroider/test-setup from 0.43.5 to 0.47.2 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#249](https://github.com/qonto/ember-autofocus-modifier/pull/249) chore(deps-dev): bump eslint-plugin-ember from 10.5.7 to 10.5.8 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#253](https://github.com/qonto/ember-autofocus-modifier/pull/253) chore(deps-dev): bump ember-template-lint from 3.13.0 to 3.14.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#254](https://github.com/qonto/ember-autofocus-modifier/pull/254) chore(deps-dev): bump ember-page-title from 6.2.2 to 7.0.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#229](https://github.com/qonto/ember-autofocus-modifier/pull/229) chore(deps-dev): bump lerna-changelog from 1.0.1 to 2.2.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#214](https://github.com/qonto/ember-autofocus-modifier/pull/214) chore(deps): bump tar from 6.0.1 to 6.1.11 ([@dependabot[bot]](https://github.com/apps/dependabot))
+
+#### Committers: 1
+- Paul Rosset ([@PaulRosset](https://github.com/PaulRosset))
