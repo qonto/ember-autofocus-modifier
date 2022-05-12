@@ -159,3 +159,11 @@ https://github.com/highlightjs/highlight.js/issues/2877
 
 #### Committers: 1
 - Paul Rosset ([@PaulRosset](https://github.com/PaulRosset))
+
+## Unreleased (2022-05-12)
+
+#### :boom: Breaking Change
+* [#292](https://github.com/qonto/ember-autofocus-modifier/pull/292) Resolve `ember-modifier` deprecations ([@bertdeblock](https://github.com/bertdeblock))
+
+#### Committers: 1
+- Bert De Block ([@bertdeblock](https://github.com/bertdeblock))
