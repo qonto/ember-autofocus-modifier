@@ -1,3 +1,6 @@
+
+![ember-autofocus-modifier-illustration](https://user-images.githubusercontent.com/15218861/189953191-49028e3e-6627-4e3d-9945-70800a6f3d0b.svg)
+
 ember-autofocus-modifier
 ==============================================================================
 
