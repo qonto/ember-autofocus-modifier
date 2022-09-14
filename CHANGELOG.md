@@ -167,3 +167,4 @@ https://github.com/highlightjs/highlight.js/issues/2877
 
 #### Committers: 1
 - Bert De Block ([@bertdeblock](https://github.com/bertdeblock))
+
