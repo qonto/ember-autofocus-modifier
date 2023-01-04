@@ -1,4 +1,4 @@
-import { find, render } from '@ember/test-helpers';
+import { find, render, tab } from '@ember/test-helpers';
 import { setupRenderingTest } from 'ember-qunit';
 import { module, test } from 'qunit';
 
@@ -276,6 +276,41 @@ module('Integration | Modifier | autofocus', function (hooks) {
 
       assert.dom('div').isFocused();
       assert.dom('div').hasAttribute('tabindex', '-1');
+    });
+
+    test('non-focusable {{autofocus}} elements are still omitted from tabbing', async function (assert) {
+      await render(hbs`
+        <div {{autofocus}}></div>
+        <button id='a'></button>
+        <button id='b'></button>
+      `);
+
+      assert.dom('div').isFocused();
+
+      await tab();
+      assert.dom('div').isNotFocused();
+      assert.dom('#a').isFocused();
+
+      await tab();
+      assert.dom('#a').isNotFocused();
+      assert.dom('#b').isFocused();
+
+      await tab();
+      assert.dom('#a').isNotFocused();
+      assert.dom('div').isNotFocused();
+
+      await tab({ backwards: true });
+      assert.dom('#b').isFocused();
+      assert.dom('div').isNotFocused();
+
+      await tab({ backwards: true });
+      assert.dom('#b').isNotFocused();
+      assert.dom('#a').isFocused();
+      assert.dom('div').isNotFocused();
+
+      await tab({ backwards: true });
+      assert.dom('#a').isNotFocused();
+      assert.dom('div').isNotFocused();
     });
 
     test('tabindex isnt added to already focusable elements', async function (assert) {
