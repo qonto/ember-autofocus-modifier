@@ -1,4 +1,4 @@
-import { render } from '@ember/test-helpers';
+import { find, render, tab } from '@ember/test-helpers';
 import { setupRenderingTest } from 'ember-qunit';
 import { module, test } from 'qunit';
 
@@ -268,5 +268,95 @@ module('Integration | Modifier | autofocus', function (hooks) {
     assert
       .dom('[data-test-input-1]')
       .isNotFocused('The first non related input is not focused');
+  });
+
+  module('A11y-specific behaviors', function () {
+    test('non-focusable elements may be focused', async function (assert) {
+      await render(hbs`<div {{autofocus}}></div>`);
+
+      assert.dom('div').isFocused();
+      assert.dom('div').hasAttribute('tabindex', '-1');
+    });
+
+    test('non-focusable {{autofocus}} elements are still omitted from tabbing', async function (assert) {
+      await render(hbs`
+        <div {{autofocus}}></div>
+        <button id='a'></button>
+        <button id='b'></button>
+      `);
+
+      assert.dom('div').isFocused();
+
+      await tab();
+      assert.dom('div').isNotFocused();
+      assert.dom('#a').isFocused();
+
+      await tab();
+      assert.dom('#a').isNotFocused();
+      assert.dom('#b').isFocused();
+
+      await tab();
+      assert.dom('#a').isNotFocused();
+      assert.dom('div').isNotFocused();
+
+      await tab({ backwards: true });
+      assert.dom('#b').isFocused();
+      assert.dom('div').isNotFocused();
+
+      await tab({ backwards: true });
+      assert.dom('#b').isNotFocused();
+      assert.dom('#a').isFocused();
+      assert.dom('div').isNotFocused();
+
+      await tab({ backwards: true });
+      assert.dom('#a').isNotFocused();
+      assert.dom('div').isNotFocused();
+    });
+
+    test('tabindex isnt added to already focusable elements', async function (assert) {
+      let assertElement = (element) => {
+        let elem = find(element);
+
+        assert.dom(elem).isFocused();
+        assert.dom(elem).doesNotHaveAttribute('tabindex');
+      };
+
+      await render(hbs`<button aria-disabled {{autofocus}}></button>`);
+      assertElement('[aria-disabled]');
+
+      await render(hbs`<button {{autofocus}}></button>`);
+      assertElement('button');
+
+      await render(hbs`
+        <details>
+          <summary {{autofocus}}></summary>
+        </details>
+      `);
+      assertElement('summary');
+
+      await render(hbs`<iframe {{autofocus}}></iframe>`);
+      assertElement('iframe');
+
+      await render(hbs`<input {{autofocus}} />`);
+      assertElement('input');
+
+      await render(hbs`<select {{autofocus}}></select>`);
+      assertElement('select');
+
+      await render(hbs`<textarea {{autofocus}}></textarea>`);
+      assertElement('textarea');
+
+      await render(hbs`<a href {{autofocus}}></a>`);
+      assertElement('[href]');
+
+      await render(hbs`<div contenteditable {{autofocus}}></div>`);
+      assertElement('[contenteditable]');
+    });
+    test('it respects existing tabindex', async function (assert) {
+      await render(hbs`<div tabindex="0" {{autofocus}}></div>`);
+
+      assert.dom('div').isFocused();
+      assert.dom('div').hasAttribute('tabindex', '0');
+    });
   });
 });
