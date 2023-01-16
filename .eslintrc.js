@@ -2,12 +2,21 @@
 
 module.exports = {
   root: true,
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
+    requireConfigFile: false,
     ecmaFeatures: {
       legacyDecorators: true,
+    },
+    babelOptions: {
+      plugins: [
+        [
+          '@babel/plugin-proposal-decorators',
+          { decoratorsBeforeExport: true, version: '2021-12' },
+        ],
+      ],
     },
   },
   plugins: ['ember'],
