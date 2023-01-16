@@ -16,10 +16,10 @@ module('Integration | Modifier | autofocus', function (hooks) {
     await render(hbs`
       <div {{autofocus}}>
         <span>this is not a focusable element</span>
-        <button data-test-button>this is a button</button>
-        <input data-test-input-1 />
-        <input data-test-input-2 />
-        <input data-test-input-3 />
+        <button type="button" data-test-button>this is a button</button>
+        <input id="1" data-test-input-1 />
+        <input id="2" data-test-input-2 />
+        <input id="3" data-test-input-3 />
       </div>
     `);
 
@@ -30,10 +30,10 @@ module('Integration | Modifier | autofocus', function (hooks) {
     await render(hbs`
       <div {{autofocus}}>
         <span>this is not a focusable element</span>
-        <button data-test-button>this is a button</button>
-        <input data-test-input-1 disabled />
-        <input data-test-input-2 disabled />
-        <input data-test-input-3 />
+        <button type="button" data-test-button>this is a button</button>
+        <input id="1" data-test-input-1 disabled />
+        <input id="2" data-test-input-2 disabled />
+        <input id="3" data-test-input-3 />
       </div>
     `);
 
@@ -46,10 +46,10 @@ module('Integration | Modifier | autofocus', function (hooks) {
     await render(hbs`
       <div {{autofocus}}>
         <span>this is not a focusable element</span>
-        <button data-test-button>this is a button</button>
-        <input data-test-input-1 readonly />
-        <input data-test-input-2 readonly />
-        <input data-test-input-3 />
+        <button type="button" data-test-button>this is a button</button>
+        <input id="1" data-test-input-1 readonly />
+        <input id="2" data-test-input-2 readonly />
+        <input id="3" data-test-input-3 />
       </div>
     `);
 
@@ -60,7 +60,7 @@ module('Integration | Modifier | autofocus', function (hooks) {
 
   test('should focus the root element if no children are found', async function (assert) {
     await render(hbs`
-      <input data-test-input {{autofocus}} />
+      <input id="1" data-test-input {{autofocus}} />
     `);
 
     assert.dom('[data-test-input]').isFocused('The root input is focused');
@@ -72,10 +72,10 @@ module('Integration | Modifier | autofocus', function (hooks) {
         <div {{autofocus}}>
           <span>this is not a focusable element</span>
         </div>
-        <button data-test-button>this is a button</button>
-        <input data-test-input-1 />
-        <input data-test-input-2 />
-        <input data-test-input-3 />
+        <button type="button" data-test-button>this is a button</button>
+        <input id="1" data-test-input-1 />
+        <input id="2" data-test-input-2 />
+        <input id="3" data-test-input-3 />
       </div>
     `);
 
@@ -95,10 +95,10 @@ module('Integration | Modifier | autofocus', function (hooks) {
       <div>
         <div {{autofocus "button"}}>
           <span>this is not a focusable element</span>
-          <input data-test-input-1 />
-          <input data-test-input-2 />
-          <button data-test-button>this is a button</button>
-          <input data-test-input-3 />
+          <input id="1" data-test-input-1 />
+          <input id="2" data-test-input-2 />
+          <button type="button" data-test-button>this is a button</button>
+          <input id="3" data-test-input-3 />
         </div>
       </div>
     `);
@@ -113,15 +113,15 @@ module('Integration | Modifier | autofocus', function (hooks) {
       <div>
         <div>
           <span>this is not a focusable element</span>
-          <button data-test-button>this is a button</button>
+          <button type="button" data-test-button>this is a button</button>
           <div>
-            <input {{autofocus}} data-test-input-1 />
-            <input {{autofocus}} data-test-input-2 />
-            <input {{autofocus}} data-test-input-3 />
+            <input id="1" {{autofocus}} data-test-input-1 />
+            <input id="2" {{autofocus}} data-test-input-2 />
+            <input id="3" {{autofocus}} data-test-input-3 />
           </div>
-          <input {{autofocus}} data-test-input-4 />
-          <input {{autofocus}} data-test-input-5 />
-          <input {{autofocus}} data-test-input-6 />
+          <input id="4" {{autofocus}} data-test-input-4 />
+          <input id="5" {{autofocus}} data-test-input-5 />
+          <input id="6" {{autofocus}} data-test-input-6 />
         </div>
       </div>
     `);
@@ -134,9 +134,9 @@ module('Integration | Modifier | autofocus', function (hooks) {
   test('should give focus to the first included textarea that is not disabled', async function (assert) {
     await render(hbs`
       <form {{autofocus}}>
-        <textarea data-test-textarea="disabled" disabled />
-        <textarea data-test-textarea="enabled" />
-        <input data-test-input="enabled" />
+        <textarea id="1" data-test-textarea="disabled" disabled />
+        <textarea id="2" data-test-textarea="enabled" />
+        <input id="3" data-test-input="enabled" />
       </form>
     `);
 
@@ -148,9 +148,9 @@ module('Integration | Modifier | autofocus', function (hooks) {
   test('should give focus to the first included textarea that is not readonly', async function (assert) {
     await render(hbs`
       <form {{autofocus}}>
-        <textarea data-test-textarea="readonly" readonly />
-        <textarea data-test-textarea="enabled" />
-        <input data-test-input="enabled" />
+        <textarea id="1" data-test-textarea="readonly" readonly />
+        <textarea id="2" data-test-textarea="enabled" />
+        <input id="3" data-test-input="enabled" />
       </form>
     `);
 
@@ -163,10 +163,10 @@ module('Integration | Modifier | autofocus', function (hooks) {
     await render(hbs`
       <div {{autofocus 'input:not([disabled])' disabled=true}}>
         <span>this is not a focusable element</span>
-        <button data-test-button>this is a button</button>
-        <input data-test-input-1 />
-        <input data-test-input-2 />
-        <input data-test-input-3 />
+        <button type="button" data-test-button>this is a button</button>
+        <input id="1" data-test-input-1 />
+        <input id="2" data-test-input-2 />
+        <input id="3" data-test-input-3 />
       </div>
     `);
 
@@ -188,10 +188,10 @@ module('Integration | Modifier | autofocus', function (hooks) {
     await render(hbs`
       <div {{autofocus disabled=true}}>
         <span>this is not a focusable element</span>
-        <button data-test-button>this is a button</button>
-        <input data-test-input-1 />
-        <input data-test-input-2 />
-        <input data-test-input-3 />
+        <button type="button" data-test-button>this is a button</button>
+        <input id="1" data-test-input-1 />
+        <input id="2" data-test-input-2 />
+        <input id="3" data-test-input-3 />
       </div>
     `);
 
@@ -213,10 +213,10 @@ module('Integration | Modifier | autofocus', function (hooks) {
     await render(hbs`
       <div {{autofocus disabled=false}}>
         <span>this is not a focusable element</span>
-        <button data-test-button>this is a button</button>
-        <input data-test-input-1 />
-        <input data-test-input-2 />
-        <input data-test-input-3 />
+        <button type="button" data-test-button>this is a button</button>
+        <input id="1" data-test-input-1 />
+        <input id="2" data-test-input-2 />
+        <input id="3" data-test-input-3 />
       </div>
     `);
 
@@ -245,7 +245,7 @@ module('Integration | Modifier | autofocus', function (hooks) {
     }
     setComponentTemplate(
       hbs`
-      <button
+      <button type="button"
         {{on "focus" this.updateBar}}
         ...attributes
       >
@@ -260,7 +260,7 @@ module('Integration | Modifier | autofocus', function (hooks) {
       <div {{autofocus "input,button"}}>
         <span>this is not a focusable element</span>
         <FooButton data-test-foo/>
-        <input data-test-input-1 />
+        <input id="1" data-test-input-1 />
       </div>
     `);
 
@@ -281,8 +281,8 @@ module('Integration | Modifier | autofocus', function (hooks) {
     test('non-focusable {{autofocus}} elements are still omitted from tabbing', async function (assert) {
       await render(hbs`
         <div {{autofocus}}></div>
-        <button id='a'></button>
-        <button id='b'></button>
+        <button id="a" type="button"></button>
+        <button id="b" type="button"></button>
       `);
 
       assert.dom('div').isFocused();
@@ -321,10 +321,12 @@ module('Integration | Modifier | autofocus', function (hooks) {
         assert.dom(elem).doesNotHaveAttribute('tabindex');
       };
 
-      await render(hbs`<button aria-disabled {{autofocus}}></button>`);
+      await render(
+        hbs`<button type="button" aria-disabled="true" {{autofocus}}></button>`
+      );
       assertElement('[aria-disabled]');
 
-      await render(hbs`<button {{autofocus}}></button>`);
+      await render(hbs`<button type="button" {{autofocus}}></button>`);
       assertElement('button');
 
       await render(hbs`
@@ -334,19 +336,19 @@ module('Integration | Modifier | autofocus', function (hooks) {
       `);
       assertElement('summary');
 
-      await render(hbs`<iframe {{autofocus}}></iframe>`);
+      await render(hbs`<iframe title="title" {{autofocus}}></iframe>`);
       assertElement('iframe');
 
-      await render(hbs`<input {{autofocus}} />`);
+      await render(hbs`<input id="1" {{autofocus}} />`);
       assertElement('input');
 
-      await render(hbs`<select {{autofocus}}></select>`);
+      await render(hbs`<select id="1" {{autofocus}}></select>`);
       assertElement('select');
 
-      await render(hbs`<textarea {{autofocus}}></textarea>`);
+      await render(hbs`<textarea id="1" {{autofocus}}></textarea>`);
       assertElement('textarea');
 
-      await render(hbs`<a href {{autofocus}}></a>`);
+      await render(hbs`<a href {{autofocus}}>link</a>`);
       assertElement('[href]');
 
       await render(hbs`<div contenteditable {{autofocus}}></div>`);
