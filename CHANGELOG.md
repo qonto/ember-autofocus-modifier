@@ -168,3 +168,35 @@ https://github.com/highlightjs/highlight.js/issues/2877
 #### Committers: 1
 - Bert De Block ([@bertdeblock](https://github.com/bertdeblock))
 
+
+## 5.0.0 (2023-01-16)
+
+#### :boom: Breaking Change
+* [#350](https://github.com/qonto/ember-autofocus-modifier/pull/350) Widen `ember-modifier` versions to support v4 ([@boris-petrov](https://github.com/boris-petrov))
+* [#354](https://github.com/qonto/ember-autofocus-modifier/pull/354) Support A11y workflow where we want to move focus, yet still omit non… ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### :pushpin: Dependency
+* [#355](https://github.com/qonto/ember-autofocus-modifier/pull/355) chore(deps-dev): bump eslint from 7.32.0 to 8.32.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#357](https://github.com/qonto/ember-autofocus-modifier/pull/357) chore(deps-dev): bump ember-template-lint from 3.14.0 to 5.3.1 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#302](https://github.com/qonto/ember-autofocus-modifier/pull/302) chore(deps): bump nanoid from 3.1.30 to 3.3.4 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#277](https://github.com/qonto/ember-autofocus-modifier/pull/277) chore(deps): bump follow-redirects from 1.14.5 to 1.14.8 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#337](https://github.com/qonto/ember-autofocus-modifier/pull/337) chore(deps): bump socket.io-parser from 4.0.4 to 4.0.5 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#285](https://github.com/qonto/ember-autofocus-modifier/pull/285) chore(deps): bump node-fetch from 2.6.6 to 2.6.7 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#315](https://github.com/qonto/ember-autofocus-modifier/pull/315) chore(deps): bump terser from 4.8.0 to 4.8.1 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#338](https://github.com/qonto/ember-autofocus-modifier/pull/338) chore(deps): bump loader-utils from 1.4.0 to 1.4.2 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#344](https://github.com/qonto/ember-autofocus-modifier/pull/344) chore(deps): bump decode-uri-component from 0.2.0 to 0.2.2 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#356](https://github.com/qonto/ember-autofocus-modifier/pull/356) chore(deps): bump qs from 6.10.1 to 6.11.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#341](https://github.com/qonto/ember-autofocus-modifier/pull/341) chore(deps-dev): bump eslint-plugin-qunit from 7.1.0 to 7.3.4 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#349](https://github.com/qonto/ember-autofocus-modifier/pull/349) chore(deps-dev): bump ember-cli from 3.28.4 to 4.9.2 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#343](https://github.com/qonto/ember-autofocus-modifier/pull/343) chore(deps-dev): bump webpack from 5.64.4 to 5.75.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#342](https://github.com/qonto/ember-autofocus-modifier/pull/342) chore(deps-dev): bump @embroider/test-setup from 0.47.2 to 2.0.2 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#350](https://github.com/qonto/ember-autofocus-modifier/pull/350) Widen `ember-modifier` versions to support v4 ([@boris-petrov](https://github.com/boris-petrov))
+* [#330](https://github.com/qonto/ember-autofocus-modifier/pull/330) chore(deps-dev): bump ember-cli-htmlbars from 6.0.0 to 6.1.1 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#334](https://github.com/qonto/ember-autofocus-modifier/pull/334) chore(deps-dev): bump ember-source from 3.28.6 to 4.7.1 ([@dependabot[bot]](https://github.com/apps/dependabot))
+
+#### :zap: Improvement Features
+* [#354](https://github.com/qonto/ember-autofocus-modifier/pull/354) Support A11y workflow where we want to move focus, yet still omit non… ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### Committers: 2
+- Boris Petrov ([@boris-petrov](https://github.com/boris-petrov))
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
