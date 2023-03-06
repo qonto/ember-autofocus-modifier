@@ -60,7 +60,10 @@
   "ember-addon": {
     "version": 2,
     "type": "addon",
-    "main": "addon-main.cjs"
+    "main": "addon-main.cjs",
+    "app-js": {
+      "./modifiers/autofocus.js": "./dist/_app_/modifiers/autofocus.js"
+    }
   },
   "exports": {
     ".": "./dist/index.js",

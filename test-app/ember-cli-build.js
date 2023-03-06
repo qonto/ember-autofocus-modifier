@@ -15,9 +15,9 @@ module.exports = function (defaults) {
       {
         package: 'test-app',
         components: {
-          '{{foo-component}}': { safeToIgnore: true }
-        }
-      }
-    ]
+          '{{foo-button}}': { safeToIgnore: true },
+        },
+      },
+    ],
   });
 };
