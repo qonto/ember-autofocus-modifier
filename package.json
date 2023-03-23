@@ -16,11 +16,13 @@
     "start": "concurrently 'npm:start:*' --restart-after 5000 --prefix-colors cyan,white,yellow",
     "start:addon": "yarn workspace ember-autofocus-modifier run start",
     "start:test-app": "yarn workspace test-app run start",
-    "test": "yarn workspaces run test"
+    "test": "yarn workspaces run test",
+    "release": "release-it"
   },
   "devDependencies": {
     "concurrently": "^7.2.1",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "release-it": "^15.9.1"
   },
   "workspaces": [
     "ember-autofocus-modifier",
