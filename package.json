@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "concurrently": "^7.2.1",
-    "prettier": "^2.5.1"
+    "prettier": "^2.8.6"
   },
   "workspaces": [
     "ember-autofocus-modifier",
