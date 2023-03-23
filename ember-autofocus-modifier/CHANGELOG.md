@@ -200,3 +200,23 @@ https://github.com/highlightjs/highlight.js/issues/2877
 #### Committers: 2
 - Boris Petrov ([@boris-petrov](https://github.com/boris-petrov))
 - [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+
+
+
+### 5.1.0 (2023-03-23)
+
+* Add release-it to package (abfb7ef)
+* Release 5.1.0 (3bcc7fa)
+* Update package version to help release-it know which version to release (724ab58)
+* Add description in package.json file (4556a9a)
+* Include changelog in released package (272db10)
+* Add changelog that was lose during the migration to v2 (b669c0e)
+* 📝 Backport README from v2 addon migration (dd6f6b2)
+* Update test-app/config/ember-cli-update.json (925c1a3)
+* Remove ember-data from the test-app (it's unused and causing issues), also get off beta versions (b09462f)
+* Remove ember-classic from C.I. (7fe7d21)
+* Downgrade ember-qunit to v5 to retain ember 3.24 support (4ba6ece)
+* Setup volta and correct yarn version (601c8ce)
+* For embroider-optimized, add packageRules, since the test-app makes up its own components (4c92fd6)
+* Add ember-3.24 back to ember-try matrix (8f76c5b)
+* Run npx ember-addon-migrator (475efae)
