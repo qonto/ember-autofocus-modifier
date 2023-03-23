@@ -1,7 +1,7 @@
 {
   "name": "ember-autofocus-modifier",
   "version": "5.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Wraps a modifier to autofocus an element in the DOM.",
   "keywords": [
     "ember-addon"
   ],
