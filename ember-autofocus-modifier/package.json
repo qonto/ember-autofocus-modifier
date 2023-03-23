@@ -26,7 +26,8 @@
     "start": "rollup --config --watch",
     "test": "echo 'A v2 addon does not have tests, run tests in test-app'",
     "prepack": "yarn run build",
-    "prepare": "yarn run build"
+    "prepare": "yarn run build",
+    "release": "release-it"
   },
   "dependencies": {
     "@embroider/addon-shim": "^1.0.0",
@@ -48,6 +49,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.5.1",
+    "release-it": "^15.9.1",
     "rollup": "^2.67.0",
     "rollup-plugin-copy": "^3.4.0"
   },
