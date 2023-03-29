@@ -60,7 +60,7 @@
     "prettier": "^2.8.1",
     "qunit": "^2.19.3",
     "qunit-dom": "^2.0.0",
-    "webpack": "^5.75.0",
+    "webpack": "^5.76.0",
     "@babel/eslint-parser": "^7.19.1",
     "ember-export-application-global": "^2.0.0",
     "ember-maybe-import-regenerator": "^1.0.0",
