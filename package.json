@@ -29,8 +29,7 @@
     "node": "14.* || 16.* || >= 18"
   },
   "volta": {
-    "node": "18.14.2",
-    "yarn": "1.22.19"
+    "node": "18.14.2"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
