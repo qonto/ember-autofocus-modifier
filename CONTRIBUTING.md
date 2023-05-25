@@ -4,28 +4,27 @@
 
 * `git clone <repository-url>`
 * `cd ember-autofocus-modifier`
-* `yarn install`
+* `pnpm install`
 
 ## Linting
 
-* `yarn lint`
-* `yarn lint:fix`
+* `pnpm lint`
+* `pnpm lint:fix`
 
 ## Building the addon
 
 * `cd ember-autofocus-modifier`
-* `yarn build`
+* `pnpm build`
 
 ## Running tests
 
 * `cd test-app`
-* `yarn test` – Runs the test suite on the current Ember version
-* `yarn test:watch` – Runs the test suite in "watch mode"
+* `pnpm test` – Runs the test suite on the current Ember version
 
 ## Running the test application
 
 * `cd test-app`
-* `yarn start`
+* `pnpm start`
 * Visit the test application at [http://localhost:4200](http://localhost:4200).
 
 For more information on using ember-cli, visit [https://cli.emberjs.com/release/](https://cli.emberjs.com/release/).

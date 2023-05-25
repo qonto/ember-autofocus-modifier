@@ -8,19 +8,15 @@
   },
   "license": "MIT",
   "author": "",
-  "workspaces": [
-    "ember-autofocus-modifier",
-    "test-app"
-  ],
   "scripts": {
-    "build": "yarn workspace ember-autofocus-modifier run build",
-    "lint": "yarn workspaces run lint",
-    "lint:fix": "yarn workspaces run lint:fix",
-    "prepare": "yarn build",
-    "start": "concurrently 'npm:start:*' --restart-after 5000 --prefix-colors cyan,white,yellow",
-    "start:addon": "yarn workspace ember-autofocus-modifier run start",
-    "start:test-app": "yarn workspace test-app run start",
-    "test": "yarn workspaces run test"
+    "build": "pnpm --filter ember-autofocus-modifier build",
+    "lint": "pnpm --filter '*' lint",
+    "lint:fix": "pnpm --filter '*' lint:fix",
+    "prepare": "pnpm build",
+    "start": "concurrently 'pnpm:start:*' --restart-after 5000 --prefix-colors cyan,white,yellow",
+    "start:addon": "pnpm --filter ember-autofocus-modifier start",
+    "start:test-app": "pnpm --filter test-app start",
+    "test": "pnpm --filter '*' test"
   },
   "devDependencies": {
     "@release-it-plugins/lerna-changelog": "^5.0.0",
@@ -33,8 +29,7 @@
     "node": "14.* || 16.* || >= 18"
   },
   "volta": {
-    "node": "18.14.2",
-    "yarn": "1.22.19"
+    "node": "18.14.2"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
