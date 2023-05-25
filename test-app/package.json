@@ -63,7 +63,6 @@
     "qunit-dom": "2.0.0",
     "webpack": "5.83.1",
     "@babel/eslint-parser": "^7.19.1",
-    "ember-export-application-global": "^2.0.0",
     "ember-maybe-import-regenerator": "^1.0.0",
     "eslint-plugin-node": "11.1.0",
     "lerna-changelog": "2.2.0",
