@@ -53,6 +53,7 @@ export default {
         { src: '../README.md', dest: '.' },
         { src: '../LICENSE.md', dest: '.' },
         { src: '../CHANGELOG.md', dest: '.' },
+        { src: 'src/modifiers/autofocus.d.ts', dest: './dist/modifiers' },
       ],
     }),
   ],
