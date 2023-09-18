@@ -20,7 +20,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install pnpm
-        uses: NullVoxPopuli/action-setup-pnpm@v2
+        uses: wyvox/action-setup-pnpm@v3
         with:
           pnpm-version: 8.5.1
           node-version: 16.x
@@ -38,11 +38,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install pnpm
-        uses: NullVoxPopuli/action-setup-pnpm@v2
+        uses: wyvox/action-setup-pnpm@v3
         with:
           pnpm-version: 8.5.1
           node-version: 16.x
-          no-lockfile: true
+          args: "--no-lockfile"
       - name: Run tests
         run: pnpm test
 
@@ -67,7 +67,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install pnpm
-        uses: NullVoxPopuli/action-setup-pnpm@v2
+        uses: wyvox/action-setup-pnpm@v3
         with:
           pnpm-version: 8.5.1
           node-version: 16.x
