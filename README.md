@@ -81,7 +81,7 @@ Installation
 ```
 yarn add -D ember-autofocus-modifier
 ```
-or 
+or
 ```
 npm install --save-dev ember-autofocus-modifier
 ```
@@ -90,9 +90,9 @@ npm install --save-dev ember-autofocus-modifier
 Compatibility
 ------------------------------------------------------------------------------
 
-* Ember.js v3.24 or above
-* Ember CLI v2.13 or above
-* Node.js v12 or above
+* Ember.js v3.28 or above
+* Ember CLI v3.28 or above
+* Node.js v16 or above
 
 
 Contributing

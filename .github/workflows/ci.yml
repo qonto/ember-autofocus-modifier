@@ -1,68 +1,77 @@
-name: ci
-
-env:
-  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+name: CI
 
 on:
-  pull_request:
   push:
     branches:
+      - main
       - master
-    tags:
-      - '*'
+  pull_request: {}
+
+concurrency:
+  group: ci-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  lint:
+  test:
+    name: "Tests"
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 14.x
-      - name: Install dependencies
-        run: yarn --frozen-lockfile
-      - name: Lint javascript code
-        run: yarn lint:js
-      - name: Lint handlebars code
-        run: yarn lint:hbs
 
-  basic-tests:
-    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install pnpm
+        uses: NullVoxPopuli/action-setup-pnpm@v2
         with:
-          node-version: 14.x
-      - name: Install dependencies
-        run: yarn --frozen-lockfile
+          pnpm-version: 8.5.1
+          node-version: 16.x
+          args: "--frozen-lockfile"
+      - name: Lint
+        run: pnpm lint
       - name: Run tests
-        run: yarn test
+        run: pnpm test
 
-  ember-try:
-    needs: [lint, basic-tests]
+  floating:
+    name: "Floating Dependencies"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install pnpm
+        uses: NullVoxPopuli/action-setup-pnpm@v2
+        with:
+          pnpm-version: 8.5.1
+          node-version: 16.x
+          no-lockfile: true
+      - name: Run tests
+        run: pnpm test
+
+  try-scenarios:
+    name: "ember-try: ${{ matrix.ember-try-scenario }}"
+    runs-on: ubuntu-latest
+    needs: "test"
+
     strategy:
+      fail-fast: false
       matrix:
-        ember: [lts-3.24, release, beta, canary]
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 14.x
-      - name: Install dependencies
-        run: yarn --frozen-lockfile
-      - name: Run tests for ember-${{ matrix.ember }}
-        run: yarn ember try:one ember-${{ matrix.ember }}
+        ember-try-scenario:
+          - ember-lts-3.28
+          - ember-lts-4.4
+          - ember-release
+          - ember-beta
+          - ember-canary
+          - embroider-safe
+          - embroider-optimized
 
-  floating-dependencies:
-    needs: [lint, basic-tests]
-    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install pnpm
+        uses: NullVoxPopuli/action-setup-pnpm@v2
         with:
-          node-version: 14.x
-      - name: Install dependencies w/o lockfile
-        run: yarn install --no-lockfile --non-interactive
+          pnpm-version: 8.5.1
+          node-version: 16.x
+          args: "--frozen-lockfile"
       - name: Run tests
-        run: yarn test
+        run: pnpm ember try:one ${{ matrix.ember-try-scenario }} --skip-cleanup
+        working-directory: test-app

@@ -1,15 +1,3 @@
-
-## v6.0.0 (2023-06-02)
-
-#### :boom: Breaking Change
-* [#392](https://github.com/qonto/ember-autofocus-modifier/pull/392) Drop node v14 support ([@vscav](https://github.com/vscav))
-
-#### :house: Internal
-* [#391](https://github.com/qonto/ember-autofocus-modifier/pull/391) Migrate from yarn to pnpm ([@vscav](https://github.com/vscav))
-
-#### Committers: 1
-- Vincent Scavinner ([@vscav](https://github.com/vscav))
-
 ## v0.1.0 (2019-11-13)
 
 #### :memo: Documentation
