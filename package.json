@@ -23,7 +23,7 @@
     "@release-it-plugins/workspaces": "^3.2.0",
     "concurrently": "^8.2.1",
     "prettier": "^2.5.1",
-    "release-it": "^15.5.0"
+    "release-it": "^15.11.0"
   },
   "engines": {
     "node": "16.* || >= 18"
