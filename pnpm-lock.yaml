@@ -40,8 +40,8 @@ importers:
         specifier: ^7.18.2
         version: 7.19.1(@babel/core@7.17.0)(eslint@8.49.0)
       '@babel/plugin-proposal-class-properties':
-        specifier: ^7.16.7
-        version: 7.16.7(@babel/core@7.17.0)
+        specifier: ^7.18.6
+        version: 7.18.6(@babel/core@7.17.0)
       '@babel/plugin-proposal-decorators':
         specifier: ^7.17.0
         version: 7.17.0(@babel/core@7.17.0)
@@ -753,17 +753,6 @@ packages:
       '@babel/plugin-syntax-async-generators': 7.8.4(@babel/core@7.21.8)
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /@babel/plugin-proposal-class-properties@7.16.7(@babel/core@7.17.0):
-    resolution: {integrity: sha512-IobU0Xme31ewjYOShSIqd/ZGM/r/cuOz2z0MDbNrhF5FW+ZVgi0f2lyeoj9KFPDOAqsYxmLWZte1WOwlvY9aww==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/core': 7.17.0
-      '@babel/helper-create-class-features-plugin': 7.21.8(@babel/core@7.17.0)
-      '@babel/helper-plugin-utils': 7.21.5
     dev: true
 
   /@babel/plugin-proposal-class-properties@7.18.6(@babel/core@7.17.0):
