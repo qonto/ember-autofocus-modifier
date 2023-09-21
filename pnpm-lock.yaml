@@ -161,8 +161,8 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0
       ember-page-title:
-        specifier: 7.0.0
-        version: 7.0.0
+        specifier: 8.0.0
+        version: 8.0.0
       ember-qunit:
         specifier: 6.2.0
         version: 6.2.0(@ember/test-helpers@2.9.3)(ember-source@4.12.0)(qunit@2.19.4)(webpack@5.83.1)
@@ -1850,7 +1850,6 @@ packages:
       semver: 7.5.1
     transitivePeerDependencies:
       - supports-color
-    dev: false
 
   /@embroider/core@2.1.1:
     resolution: {integrity: sha512-N4rz+r8WjHYmwprvBYC0iUT4EWNpdDjF7JLl8PEYlWbhXDEJL+Ma/aP78S7spMhIpJX9SHK7nbgNxmZAqAe34A==}
@@ -1972,7 +1971,6 @@ packages:
       typescript-memoize: 1.1.1
     transitivePeerDependencies:
       - supports-color
-    dev: false
 
   /@embroider/test-setup@3.0.1:
     resolution: {integrity: sha512-t7R2f10iZDSNw3ovWAPM63GRQTu63uihpVh6CvHev5XkLt8B7tdxcxGyO6RbdF5Hu+pbsUu8sD0kAlR1gopmxg==}
@@ -3334,7 +3332,6 @@ packages:
   /babel-import-util@2.0.0:
     resolution: {integrity: sha512-pkWynbLwru0RZmA9iKeQL63+CkkW0RCP3kL5njCtudd6YPUKb5Pa0kL4fb3bmuKn2QDBFwY5mvvhEK/+jv2Ynw==}
     engines: {node: '>= 12.*'}
-    dev: false
 
   /babel-loader@8.3.0(@babel/core@7.21.8)(webpack@5.83.1):
     resolution: {integrity: sha512-H8SvsMF+m9t15HNLMipppzkC+Y2Yq+v3SonZyU70RBL/h1gxPkH08Ot8pEE9Z4Kd+czyWJClmFS8qzIP9OZ04Q==}
@@ -6087,11 +6084,11 @@ packages:
       - supports-color
     dev: false
 
-  /ember-page-title@7.0.0:
-    resolution: {integrity: sha512-oq6+HYbeVD/BnxIO5AkP4gWlsatdgW2HFO10F8+XQiJZrwa7cC7Wm54JNGqQkavkDQTgNSiy1Fe2NILJ14MmAg==}
-    engines: {node: 12.* || 14.* || >= 16}
+  /ember-page-title@8.0.0:
+    resolution: {integrity: sha512-4bu8CpoPObJZNUogwIjpntxS3jMDlZ1eoJsZUuktcCgOI7LfZocuYbu9LnLM215QjEOV0TxGDWwJck1l8cWKeg==}
+    engines: {node: 16.* || >= 18}
     dependencies:
-      ember-cli-babel: 7.26.11
+      '@embroider/addon-shim': 1.8.6
     transitivePeerDependencies:
       - supports-color
     dev: true
