@@ -36,7 +36,7 @@ export default modifier(
           element.isContentEditable ||
           element.hasAttribute("aria-disabled") ||
           element.hasAttribute("href") ||
-          element.hasAttribute("tabindex")
+          element.hasAttribute("tabindex"),
       );
 
     /**
@@ -66,5 +66,5 @@ export default modifier(
       }
     };
   },
-  { eager: false }
+  { eager: false },
 );

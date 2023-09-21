@@ -252,7 +252,7 @@ module('Integration | Modifier | autofocus', function (hooks) {
         Foo: {{this.bar}}
       </button>
     `,
-      FooButtonComponent
+      FooButtonComponent,
     );
     this.owner.register('component:foo-button', FooButtonComponent);
 
@@ -322,7 +322,7 @@ module('Integration | Modifier | autofocus', function (hooks) {
       };
 
       await render(
-        hbs`<button type="button" aria-disabled="true" {{autofocus}}></button>`
+        hbs`<button type="button" aria-disabled="true" {{autofocus}}></button>`,
       );
       assertElement('[aria-disabled]');
 

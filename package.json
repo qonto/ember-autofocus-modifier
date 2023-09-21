@@ -22,7 +22,7 @@
     "@release-it-plugins/lerna-changelog": "^5.0.0",
     "@release-it-plugins/workspaces": "^4.0.0",
     "concurrently": "^8.2.1",
-    "prettier": "^2.5.1",
+    "prettier": "^3.0.3",
     "release-it": "^15.11.0"
   },
   "engines": {
