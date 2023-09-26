@@ -13,6 +13,7 @@
   "author": "",
   "files": [
     "addon-main.cjs",
+    "declarations",
     "dist"
   ],
   "scripts": {
@@ -21,9 +22,12 @@
     "lint:fix": "concurrently 'pnpm:lint:*:fix' --names 'fix:'",
     "lint:hbs": "ember-template-lint . --no-error-on-unmatched-pattern",
     "lint:js": "eslint . --cache",
+    "lint:types": "glint",
     "lint:hbs:fix": "ember-template-lint . --fix --no-error-on-unmatched-pattern",
     "lint:js:fix": "eslint . --fix",
-    "start": "rollup --config --watch",
+    "start": "concurrently 'pnpm:start:*'",
+    "start:js": "rollup --config --watch --no-watch.clearScreen",
+    "start:types": "glint -d --watch",
     "test": "echo 'A v2 addon does not have tests, run tests in test-app'",
     "prepack": "rollup --config",
     "prepare": "rollup --config",
@@ -40,6 +44,9 @@
     "@babel/plugin-proposal-decorators": "^7.23.0",
     "@babel/plugin-syntax-decorators": "^7.17.0",
     "@embroider/addon-dev": "^4.1.0",
+    "@glint/core": "^1.2.0",
+    "@glint/environment-ember-loose": "^1.2.0",
+    "@glint/template": "^1.2.0",
     "@rollup/plugin-babel": "^6.0.3",
     "@tsconfig/ember": "^3.0.1",
     "@typescript-eslint/eslint-plugin": "^6.5.0",
@@ -75,8 +82,21 @@
     }
   },
   "exports": {
-    ".": "./dist/index.js",
-    "./*": "./dist/*.js",
+    ".": {
+      "types": "./declarations/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./*": {
+      "types": "./declarations/*.d.ts",
+      "default": "./dist/*.js"
+    },
     "./addon-main.js": "./addon-main.cjs"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "declarations/*"
+      ]
+    }
   }
 }
