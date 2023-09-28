@@ -53,6 +53,9 @@
     "rollup": "^2.67.0",
     "rollup-plugin-copy": "^3.5.0"
   },
+  "peerDependencies": {
+    "ember-source": "^3.28.0 || ^4.0.0 || ^5.0.0"
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
