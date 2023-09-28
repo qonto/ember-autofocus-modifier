@@ -51,7 +51,7 @@
     "prettier": "^3.0.3",
     "release-it": "^15.11.0",
     "rollup": "^2.67.0",
-    "rollup-plugin-copy": "^3.4.0"
+    "rollup-plugin-copy": "^3.5.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
