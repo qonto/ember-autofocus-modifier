@@ -50,5 +50,10 @@
       "tokenRef": "GITHUB_AUTH"
     },
     "npm": false
+  },
+  "pnpm": {
+    "overrides": {
+      "ember-source": "4.12.2"
+    }
   }
 }
