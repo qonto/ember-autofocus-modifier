@@ -13,17 +13,23 @@
   "author": "",
   "files": [
     "addon-main.cjs",
+    "declarations",
     "dist"
   ],
   "scripts": {
-    "build": "rollup --config",
+    "build": "concurrently 'pnpm:build:*'",
+    "build:js": "rollup --config",
+    "build:types": "glint --declaration",
     "lint": "concurrently 'pnpm:lint:*(!fix)' --names 'lint:'",
     "lint:fix": "concurrently 'pnpm:lint:*:fix' --names 'fix:'",
     "lint:hbs": "ember-template-lint . --no-error-on-unmatched-pattern",
     "lint:js": "eslint . --cache",
+    "lint:types": "glint",
     "lint:hbs:fix": "ember-template-lint . --fix --no-error-on-unmatched-pattern",
     "lint:js:fix": "eslint . --fix",
-    "start": "rollup --config --watch",
+    "start": "concurrently 'pnpm:start:*'",
+    "start:js": "rollup --config --watch --no-watch.clearScreen",
+    "start:types": "glint -d --watch",
     "test": "echo 'A v2 addon does not have tests, run tests in test-app'",
     "prepack": "rollup --config",
     "prepare": "rollup --config",
@@ -39,8 +45,16 @@
     "@babel/plugin-proposal-class-properties": "^7.18.6",
     "@babel/plugin-proposal-decorators": "^7.23.0",
     "@babel/plugin-syntax-decorators": "^7.17.0",
+    "@babel/preset-typescript": "^7.23.0",
     "@embroider/addon-dev": "^4.1.0",
+    "@glimmer/component": "^1.1.2",
+    "@glint/core": "^1.2.0",
+    "@glint/environment-ember-loose": "^1.2.0",
+    "@glint/template": "^1.2.0",
     "@rollup/plugin-babel": "^6.0.3",
+    "@tsconfig/ember": "^3.0.1",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
     "concurrently": "^8.2.1",
     "ember-template-lint": "^5.11.2",
     "eslint": "^8.49.0",
@@ -51,7 +65,8 @@
     "prettier": "^3.0.3",
     "release-it": "^15.11.0",
     "rollup": "^2.67.0",
-    "rollup-plugin-copy": "^3.5.0"
+    "rollup-plugin-copy": "^3.5.0",
+    "typescript": "^5.2.2"
   },
   "peerDependencies": {
     "ember-source": "^3.28.0 || ^4.0.0"
@@ -71,8 +86,21 @@
     }
   },
   "exports": {
-    ".": "./dist/index.js",
-    "./*": "./dist/*.js",
+    ".": {
+      "types": "./declarations/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./*": {
+      "types": "./declarations/*.d.ts",
+      "default": "./dist/*.js"
+    },
     "./addon-main.js": "./addon-main.cjs"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "declarations/*"
+      ]
+    }
   }
 }
