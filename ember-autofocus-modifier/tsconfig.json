@@ -5,7 +5,7 @@
     "environment": "ember-loose"
   },
   "compilerOptions": {
-    "allowJs": true,
+    "allowJs": false,
     "declarationDir": "declarations",
     "skipLibCheck": true
   }
