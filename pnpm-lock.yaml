@@ -49,8 +49,8 @@ importers:
         specifier: ^7.23.0
         version: 7.23.0(@babel/core@7.23.0)
       '@babel/plugin-syntax-decorators':
-        specifier: ^7.17.0
-        version: 7.17.0(@babel/core@7.23.0)
+        specifier: ^7.22.10
+        version: 7.22.10(@babel/core@7.23.0)
       '@babel/preset-typescript':
         specifier: ^7.23.0
         version: 7.23.0(@babel/core@7.23.0)
@@ -658,16 +658,6 @@ packages:
     dependencies:
       '@babel/core': 7.23.0
       '@babel/helper-plugin-utils': 7.22.5
-
-  /@babel/plugin-syntax-decorators@7.17.0(@babel/core@7.23.0):
-    resolution: {integrity: sha512-qWe85yCXsvDEluNP0OyeQjH63DlhAR3W7K9BxxU1MvbDb48tgBG+Ao6IJJ6smPDrrVzSQZrbF6donpkFBMcs3A==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/core': 7.23.0
-      '@babel/helper-plugin-utils': 7.22.5
-    dev: true
 
   /@babel/plugin-syntax-decorators@7.22.10(@babel/core@7.23.0):
     resolution: {integrity: sha512-z1KTVemBjnz+kSEilAsI4lbkPOl5TvJH7YDSY1CTIzvLWJ+KHXp+mRe8VPmfnyvqOPqar1V2gid2PleKzRUstQ==}
