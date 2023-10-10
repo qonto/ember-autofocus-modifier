@@ -2,12 +2,7 @@ import { find, render, tab } from '@ember/test-helpers';
 import { setupRenderingTest } from 'ember-qunit';
 import { module, test } from 'qunit';
 
-import Component from '@glimmer/component';
-import { tracked } from '@glimmer/tracking';
-import { setComponentTemplate } from '@ember/component';
-import { action } from '@ember/object';
-
-import hbs from 'htmlbars-inline-precompile';
+import { hbs } from 'ember-cli-htmlbars';
 
 module('Integration | Modifier | autofocus', function (hooks) {
   setupRenderingTest(hooks);
@@ -235,27 +230,6 @@ module('Integration | Modifier | autofocus', function (hooks) {
   });
 
   test('should not cause rerender assertions on Glimmer components when a focus modifier is present', async function (assert) {
-    class FooButtonComponent extends Component {
-      @tracked bar;
-
-      @action
-      updateBar() {
-        this.bar = !this.bar;
-      }
-    }
-    setComponentTemplate(
-      hbs`
-      <button type="button"
-        {{on "focus" this.updateBar}}
-        ...attributes
-      >
-        Foo: {{this.bar}}
-      </button>
-    `,
-      FooButtonComponent,
-    );
-    this.owner.register('component:foo-button', FooButtonComponent);
-
     await render(hbs`
       <div {{autofocus "input,button"}}>
         <span>this is not a focusable element</span>
@@ -314,8 +288,8 @@ module('Integration | Modifier | autofocus', function (hooks) {
     });
 
     test('tabindex isnt added to already focusable elements', async function (assert) {
-      let assertElement = (element) => {
-        let elem = find(element);
+      const assertElement = (element: string): void => {
+        const elem = find(element);
 
         assert.dom(elem).isFocused();
         assert.dom(elem).doesNotHaveAttribute('tabindex');

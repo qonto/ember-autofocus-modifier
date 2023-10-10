@@ -14,9 +14,7 @@ module.exports = function (defaults) {
     packageRules: [
       {
         package: 'test-app',
-        components: {
-          '{{foo-button}}': { safeToIgnore: true },
-        },
+        components: {},
       },
     ],
   });
