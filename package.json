@@ -12,6 +12,7 @@
     "build": "pnpm --filter ember-autofocus-modifier build",
     "lint": "pnpm --filter '*' lint",
     "lint:fix": "pnpm --filter '*' lint:fix",
+    "lint:types": "pnpm --filter '*' lint:types",
     "prepare": "pnpm build",
     "start": "concurrently 'pnpm:start:*' --restart-after 5000 --prefix-colors cyan,white,yellow",
     "start:addon": "pnpm --filter ember-autofocus-modifier start",
@@ -53,7 +54,7 @@
   },
   "pnpm": {
     "overrides": {
-      "ember-source": "4.12.0"
+      "ember-source": "4.12.2"
     }
   }
 }
