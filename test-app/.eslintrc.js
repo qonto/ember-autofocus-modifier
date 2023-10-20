@@ -88,19 +88,6 @@ module.exports = {
             accessibility: 'no-public',
           },
         ],
-        'no-restricted-syntax': [
-          'error',
-          {
-            selector:
-              ':matches(PropertyDefinition, MethodDefinition)[accessibility="private"]',
-            message: 'Use #private instead',
-          },
-          {
-            selector:
-              ':matches(PropertyDefinition, MethodDefinition)[accessibility="protected"]',
-            message: 'Use #private instead',
-          },
-        ],
         '@typescript-eslint/explicit-module-boundary-types': 'error',
         '@typescript-eslint/member-delimiter-style': 'error',
         '@typescript-eslint/member-ordering': 'error',
