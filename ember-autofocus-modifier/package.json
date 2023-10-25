@@ -52,7 +52,7 @@
     "@glint/environment-ember-loose": "^1.2.0",
     "@glint/template": "^1.2.0",
     "@qonto/eslint-config-typescript": "1.0.0-rc.0",
-    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-babel": "^6.0.4",
     "@tsconfig/ember": "^3.0.1",
     "@typescript-eslint/eslint-plugin": "^6.7.4",
     "@typescript-eslint/parser": "^6.7.3",
