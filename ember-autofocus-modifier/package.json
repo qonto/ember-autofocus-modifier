@@ -50,7 +50,7 @@
     "@glimmer/component": "^1.1.2",
     "@glint/core": "^1.2.0",
     "@glint/environment-ember-loose": "^1.2.0",
-    "@glint/template": "^1.2.0",
+    "@glint/template": "^1.2.1",
     "@qonto/eslint-config-typescript": "1.0.0-rc.0",
     "@rollup/plugin-babel": "^6.0.3",
     "@tsconfig/ember": "^3.0.1",
