@@ -1,2 +1,2 @@
-declare module 'test-app/config/environment';
-declare module 'test-app/app';
+import 'ember-source/types';
+import 'ember-source/types/preview';
