@@ -1,4 +1,34 @@
 
+
+# [7.0.0](https://github.com/qonto/ember-autofocus-modifier/compare/v6.0.0...v7.0.0) (2023-11-10)
+
+
+### Bug Fixes
+
+* **peer-deps:** explicitly set ember-source versions range ([462d2a8](https://github.com/qonto/ember-autofocus-modifier/commit/462d2a8af0234867411ce883bbd8573e5161fb5c))
+* release-it conf ([8100213](https://github.com/qonto/ember-autofocus-modifier/commit/8100213bac2783d1f5ccef1eebf6c1effd51956d))
+
+
+* feat(test)!: add something breaking ([364f874](https://github.com/qonto/ember-autofocus-modifier/commit/364f874357a84cf19e0804f54ce0c5e46ec1ecd8))
+
+
+### Features
+
+* add and configure [@typescript-eslint](https://github.com/typescript-eslint) on ember-autofocus-modifier ([1451467](https://github.com/qonto/ember-autofocus-modifier/commit/14514671554aa53bb03ec08c9e1952cfb0536766))
+* add and configure [@typescript-eslint](https://github.com/typescript-eslint) on test-app ([ed39516](https://github.com/qonto/ember-autofocus-modifier/commit/ed39516482d9fa673efb5c5630a72ff5734efe20))
+* add glint to ember-autofocus-modifier ([c3dcae8](https://github.com/qonto/ember-autofocus-modifier/commit/c3dcae820713dd3ed39fe97f25c09dc5f8bda8f2))
+* add glint to test-app ([f50d744](https://github.com/qonto/ember-autofocus-modifier/commit/f50d7441c968738f480a13839500d0d022b66868))
+* add TypeScript and its configuration to ember-autofocus-modifier ([a9938f9](https://github.com/qonto/ember-autofocus-modifier/commit/a9938f996dd930a9c196994d54a4ef5cfe56da3d))
+* add TypeScript and its configuration to test-app ([355a2e5](https://github.com/qonto/ember-autofocus-modifier/commit/355a2e533deab3002b53bee78b6d22bfa12cb6b5))
+* build addon using Babel TypeScript preset ([a5b0c86](https://github.com/qonto/ember-autofocus-modifier/commit/a5b0c86f8c87eefdba3abd24dd1d76e2e4a93e1f))
+* import ember preview types in ember-autofocus-modifier ([c4165b3](https://github.com/qonto/ember-autofocus-modifier/commit/c4165b3628180b6b98bf9aaf7fffdde232e2de3a))
+* **ts-lint:** allow use of private and protected syntax in .ts files ([8a724e7](https://github.com/qonto/ember-autofocus-modifier/commit/8a724e76e91efa8c551b1582b03899b4a4e3b085))
+
+
+### BREAKING CHANGES
+
+* adding a fake breaking change
+
 ## v6.0.0 (2023-06-02)
 
 #### :boom: Breaking Change
