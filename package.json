@@ -47,7 +47,8 @@
       "@release-it-plugins/workspaces": true
     },
     "git": {
-      "tagName": "v${version}"
+      "tagName": "v${version}",
+      "requireBranch": "test-conventional-changelog"
     },
     "github": {
       "release": true,
