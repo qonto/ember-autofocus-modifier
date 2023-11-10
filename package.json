@@ -22,6 +22,7 @@
   "devDependencies": {
     "@release-it-plugins/lerna-changelog": "^5.0.0",
     "@release-it-plugins/workspaces": "^4.0.0",
+    "@release-it/conventional-changelog": "^7.0.2",
     "concurrently": "^8.2.1",
     "prettier": "^3.0.3",
     "release-it": "^15.11.0"
@@ -37,9 +38,11 @@
   },
   "release-it": {
     "plugins": {
-      "@release-it-plugins/lerna-changelog": {
-        "infile": "CHANGELOG.md",
-        "launchEditor": false
+      "@release-it/conventional-changelog": {
+        "preset": {
+          "name": "angular"
+        },
+        "infile": "CHANGELOG.md"
       },
       "@release-it-plugins/workspaces": true
     },
