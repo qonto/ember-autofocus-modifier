@@ -86,7 +86,7 @@ npm install --save-dev ember-autofocus-modifier
 
 - Ember.js v3.28 or above
 - Ember CLI v3.28 or above
-- Node.js v16 or above
+- Node.js v18 or above
 - TypeScript v5.0 or above
 
 ## TypeScript usage
