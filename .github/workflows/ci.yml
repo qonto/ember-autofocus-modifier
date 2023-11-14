@@ -23,7 +23,7 @@ jobs:
         uses: wyvox/action-setup-pnpm@v3
         with:
           pnpm-version: 8.5.1
-          node-version: 16.x
+          node-version: 18.x
           args: "--frozen-lockfile"
       - name: Lint
         run: pnpm lint
@@ -41,7 +41,7 @@ jobs:
         uses: wyvox/action-setup-pnpm@v3
         with:
           pnpm-version: 8.5.1
-          node-version: 16.x
+          node-version: 18.x
           args: "--no-lockfile"
       - name: Run tests
         run: pnpm test
@@ -72,7 +72,7 @@ jobs:
         uses: wyvox/action-setup-pnpm@v3
         with:
           pnpm-version: 8.5.1
-          node-version: 16.x
+          node-version: 18.x
           args: "--frozen-lockfile"
       - name: Run tests
         run: pnpm ember try:one ${{ matrix.ember-try-scenario }} --skip-cleanup
@@ -99,7 +99,7 @@ jobs:
         uses: wyvox/action-setup-pnpm@v3
         with:
           pnpm-version: 8.5.1
-          node-version: 16.x
+          node-version: 18.x
           args: "--frozen-lockfile"
       - name: Update TS version on addon package
         run: pnpm add -D ${{ matrix.typescript-scenario }}
