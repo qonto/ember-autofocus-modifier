@@ -1,4 +1,32 @@
 
+
+## v7.0.0-beta.0 (2023-11-20)
+
+#### :boom: Breaking Change
+* [#468](https://github.com/qonto/ember-autofocus-modifier/pull/468) feat: drop node v16 ([@vscav](https://github.com/vscav))
+
+#### :rocket: Enhancement
+* [#447](https://github.com/qonto/ember-autofocus-modifier/pull/447) refactor: migrate addon to TypeScript ([@dannycalleri](https://github.com/dannycalleri))
+
+#### :bug: Bug Fix
+* [#435](https://github.com/qonto/ember-autofocus-modifier/pull/435) fix(peer-deps): remove ember-source v5 from peerDependencies ([@dannycalleri](https://github.com/dannycalleri))
+* [#434](https://github.com/qonto/ember-autofocus-modifier/pull/434) fix(peer-deps): explicitly set ember-source versions range ([@dannycalleri](https://github.com/dannycalleri))
+
+#### :memo: Documentation
+* [#465](https://github.com/qonto/ember-autofocus-modifier/pull/465) docs: add TypeScript usage section ([@vscav](https://github.com/vscav))
+
+#### :house: Internal
+* [#462](https://github.com/qonto/ember-autofocus-modifier/pull/462) refactor: convert both `app` and `router` files to TypeScript ([@vscav](https://github.com/vscav))
+* [#460](https://github.com/qonto/ember-autofocus-modifier/pull/460) chore: install and use @qonto/eslint-config-typescript@1.0.0-rc.0 ([@dannycalleri](https://github.com/dannycalleri))
+* [#458](https://github.com/qonto/ember-autofocus-modifier/pull/458) feat(ts-lint): allow use of private and protected syntax for classes in .ts files ([@vscav](https://github.com/vscav))
+* [#432](https://github.com/qonto/ember-autofocus-modifier/pull/432) feat: add TypeScript configuration ([@dannycalleri](https://github.com/dannycalleri))
+* [#394](https://github.com/qonto/ember-autofocus-modifier/pull/394) fix: remove double pnpm installation ([@vscav](https://github.com/vscav))
+* [#393](https://github.com/qonto/ember-autofocus-modifier/pull/393) fix: remove double node installation on CI ([@vscav](https://github.com/vscav))
+
+#### Committers: 2
+- Danny Calleri ([@dannycalleri](https://github.com/dannycalleri))
+- Vincent Scavinner ([@vscav](https://github.com/vscav))
+
 ## v6.0.0 (2023-06-02)
 
 #### :boom: Breaking Change
