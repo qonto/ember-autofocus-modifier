@@ -101,18 +101,18 @@ module.exports = async function () {
       embroiderSafe({
         npm: {
           devDependencies: {
-            '@embroider/compat': '3.2.2',
+            '@embroider/compat': '3.2.1',
             '@embroider/core': '3.3.0',
-            '@embroider/webpack': '3.2.0',
+            '@embroider/webpack': '3.1.5',
           },
         },
       }),
       embroiderOptimized({
         npm: {
           devDependencies: {
-            '@embroider/compat': '3.2.2',
+            '@embroider/compat': '3.2.1',
             '@embroider/core': '3.3.0',
-            '@embroider/webpack': '3.2.0',
+            '@embroider/webpack': '3.1.5',
           },
         },
       }),
