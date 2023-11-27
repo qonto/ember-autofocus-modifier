@@ -36,7 +36,7 @@ importers:
         specifier: ^4.1.0
         version: 4.1.0(ember-source@4.12.2)
       ember-source:
-        specifier: ^3.28.0 || ^4.0.0 || ^5.0.0
+        specifier: 4.12.2
         version: 4.12.2(@babel/core@7.23.0)(@glimmer/component@1.1.2)(@glint/template@1.2.1)(webpack@5.88.2)
     devDependencies:
       '@babel/core':
@@ -79,8 +79,8 @@ importers:
         specifier: ^6.0.4
         version: 6.0.4(@babel/core@7.23.0)(rollup@4.6.0)
       '@tsconfig/ember':
-        specifier: ^3.0.1
-        version: 3.0.1
+        specifier: ^3.0.2
+        version: 3.0.2
       '@typescript-eslint/eslint-plugin':
         specifier: ^6.7.4
         version: 6.7.4(@typescript-eslint/parser@6.7.3)(eslint@8.54.0)(typescript@5.3.2)
@@ -167,8 +167,8 @@ importers:
         specifier: 1.0.0-rc.0
         version: 1.0.0-rc.0(eslint@8.54.0)(typescript@5.3.2)
       '@tsconfig/ember':
-        specifier: ^3.0.1
-        version: 3.0.1
+        specifier: ^3.0.2
+        version: 3.0.2
       '@types/ember__component':
         specifier: ^4.0.18
         version: 4.0.18(@babel/core@7.23.0)
@@ -1580,7 +1580,7 @@ packages:
     resolution: {integrity: sha512-DvJSihJPV4xshwEgBrFN4aUVc9m/Y/hVzwcslfSVq/h3dMWCyAj4+agkkdJPQrwBaE+H4IyGNzr555S7bTErEA==}
     engines: {node: 16.* || >= 18}
     peerDependencies:
-      ember-source: ^4.0.0 || ^5.0.0
+      ember-source: 4.12.2
     dependencies:
       '@ember/test-waiters': 3.0.2
       '@embroider/macros': 1.13.0(@glint/template@1.2.1)
@@ -2491,8 +2491,8 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
-  /@tsconfig/ember@3.0.1:
-    resolution: {integrity: sha512-IBoECN9o9StxTZSy12eNSPdqiH5VzngD5Qx9YQDfteiXk9XyJhnyRQuBoU/MQCVnqau9fJpgKoA8Sy/0qItFXw==}
+  /@tsconfig/ember@3.0.2:
+    resolution: {integrity: sha512-Whab2JuEA9r1RLke13tKWO7F95C7l3ivwVhxC37v98vOtFOmDA2BisY/6Fnhclmyydc5vOuVPwN3hi8UTboahw==}
     dev: true
 
   /@types/acorn@4.0.6:
@@ -5843,7 +5843,7 @@ packages:
     resolution: {integrity: sha512-XA1FwkWA5QytmWF0jcJqEr3jcZoiCl9Fb33TZgOVfClL7Voxe+/RwzISEprBRQgbf7j8z1xf8/RJCKfclUy3rQ==}
     engines: {node: 14.* || 16.* || >= 18}
     peerDependencies:
-      ember-source: ^3.28.0 || >= 4.0.0
+      ember-source: 4.12.2
     dependencies:
       ember-cli-babel: 7.26.11
       ember-source: 4.12.2(@babel/core@7.23.0)(@glimmer/component@1.1.2)(@glint/template@1.2.1)(webpack@5.88.2)
@@ -6336,7 +6336,7 @@ packages:
   /ember-modifier@4.1.0(ember-source@4.12.2):
     resolution: {integrity: sha512-YFCNpEYj6jdyy3EjslRb2ehNiDvaOrXTilR9+ngq+iUqSHYto2zKV0rleiA1XJQ27ELM1q8RihT29U6Lq5EyqQ==}
     peerDependencies:
-      ember-source: '*'
+      ember-source: 4.12.2
     peerDependenciesMeta:
       ember-source:
         optional: true
@@ -6361,7 +6361,7 @@ packages:
     resolution: {integrity: sha512-13PtywHNPTQKkDW4o8QRkJvcdsZr8hRyvh6xh/YLAX8+HaRLd3nPL8mBF4O/Kur/DAj3QWLvjzktZ2uRNGSh3A==}
     peerDependencies:
       '@ember/test-helpers': '>=3.0.3'
-      ember-source: '>=4.0.0'
+      ember-source: 4.12.2
       qunit: ^2.13.0
     dependencies:
       '@ember/test-helpers': 3.2.1(@glint/template@1.2.1)(ember-source@4.12.2)(webpack@5.88.2)
@@ -6379,7 +6379,7 @@ packages:
     resolution: {integrity: sha512-ucBk3oM+PR+AfYoSUXeQh8cDQS1sSiEKp4Pcgbew5cFMSqPxJfqd1zyZsfQKNTuyubeGmWxBOyMVSTvX2LeCyg==}
     engines: {node: 14.* || 16.* || >= 18}
     peerDependencies:
-      ember-source: ^4.8.3 || >= 5.0.0
+      ember-source: 4.12.2
     peerDependenciesMeta:
       ember-source:
         optional: true
