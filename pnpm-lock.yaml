@@ -76,8 +76,8 @@ importers:
         specifier: 1.0.0-rc.0
         version: 1.0.0-rc.0(eslint@8.54.0)(typescript@5.2.2)
       '@rollup/plugin-babel':
-        specifier: ^6.0.3
-        version: 6.0.3(@babel/core@7.23.0)(rollup@2.67.0)
+        specifier: ^6.0.4
+        version: 6.0.4(@babel/core@7.23.0)(rollup@2.67.0)
       '@tsconfig/ember':
         specifier: ^3.0.1
         version: 3.0.1
@@ -2341,13 +2341,13 @@ packages:
       yaml: 2.3.2
     dev: true
 
-  /@rollup/plugin-babel@6.0.3(@babel/core@7.23.0)(rollup@2.67.0):
-    resolution: {integrity: sha512-fKImZKppa1A/gX73eg4JGo+8kQr/q1HBQaCGKECZ0v4YBBv3lFqi14+7xyApECzvkLTHCifx+7ntcrvtBIRcpg==}
+  /@rollup/plugin-babel@6.0.4(@babel/core@7.23.0)(rollup@2.67.0):
+    resolution: {integrity: sha512-YF7Y52kFdFT/xVSuVdjkV5ZdX/3YtmX0QulG+x0taQOtJdHYzVU61aSSkAgVJ7NOv6qPkIYiJSgSWWN/DM5sGw==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@babel/core': ^7.0.0
       '@types/babel__core': ^7.1.9
-      rollup: ^1.20.0||^2.0.0||^3.0.0
+      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
     peerDependenciesMeta:
       '@types/babel__core':
         optional: true
