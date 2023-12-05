@@ -14,15 +14,19 @@
     "lint:fix": "pnpm --filter '*' lint:fix",
     "lint:types": "pnpm --filter '*' lint:types",
     "prepare": "pnpm build",
+    "postinstall": "lefthook install",
     "start": "concurrently 'pnpm:start:*' --restart-after 5000 --prefix-colors cyan,white,yellow",
     "start:addon": "pnpm --filter ember-autofocus-modifier start",
     "start:test-app": "pnpm --filter test-app start",
     "test": "pnpm --filter '*' test"
   },
   "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
     "@release-it-plugins/lerna-changelog": "^6.0.0",
     "@release-it-plugins/workspaces": "^4.0.0",
     "concurrently": "^8.2.1",
+    "lefthook": "^1.5.5",
     "prettier": "^3.0.3",
     "release-it": "^15.11.0"
   },
