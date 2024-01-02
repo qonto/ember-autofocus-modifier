@@ -1,8 +1,10 @@
 module.exports = {
   plugins: {
-    "@release-it-plugins/lerna-changelog": {
+    "@release-it/conventional-changelog": {
+      preset: {
+        name: "angular",
+      },
       infile: "CHANGELOG.md",
-      launchEditor: false,
     },
     "@release-it-plugins/workspaces": true,
   },
