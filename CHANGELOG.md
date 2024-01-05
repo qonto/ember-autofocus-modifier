@@ -1,5 +1,7 @@
 
 
+# [7.0.0](https://github.com/qonto/ember-autofocus-modifier/compare/v7.0.0-beta.0...v7.0.0) (2024-01-05)
+
 ## v7.0.0-beta.0 (2023-11-20)
 
 #### :boom: Breaking Change
