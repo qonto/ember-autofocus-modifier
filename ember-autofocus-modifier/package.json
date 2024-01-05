@@ -31,9 +31,7 @@
     "start:js": "rollup --config --watch --no-watch.clearScreen",
     "start:types": "glint -d --watch",
     "test": "echo 'A v2 addon does not have tests, run tests in test-app'",
-    "prepack": "rollup --config",
-    "prepare": "rollup --config",
-    "release": "release-it"
+    "prepack": "rollup --config"
   },
   "dependencies": {
     "@embroider/addon-shim": "^1.8.6",
@@ -64,7 +62,6 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^5.0.0",
     "prettier": "^3.0.3",
-    "release-it": "^15.11.0",
     "rollup": "^4.6.0",
     "rollup-plugin-copy": "^3.5.0",
     "typescript": "^5.3.2"

@@ -120,9 +120,6 @@ importers:
       prettier:
         specifier: ^3.0.3
         version: 3.0.3
-      release-it:
-        specifier: ^15.11.0
-        version: 15.11.0
       rollup:
         specifier: ^4.6.0
         version: 4.6.0
