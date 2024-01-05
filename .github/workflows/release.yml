@@ -10,9 +10,9 @@ jobs:
           fetch-depth: 0
 
       - name: Verify branch name
-        if: github.ref != 'refs/heads/main'
+        if: github.ref != 'refs/heads/master'
         run: |
-          echo "🚨 The release must start from the main branch!"
+          echo "🚨 The release must start from the master branch!"
           exit 1
 
       - name: Configure releaser details
