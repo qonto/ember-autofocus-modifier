@@ -181,7 +181,7 @@ module('Integration | Modifier | autofocus', function (hooks) {
 
   test('should not focus due to disabled parameter set to true without providing a selector', async function (assert) {
     await render(hbs`
-      <div {{autofocus disabled=true}}>
+      <div {{autofocus "input" disabled=true}}>
         <span>this is not a focusable element</span>
         <button type="button" data-test-button>this is a button</button>
         <input id="1" data-test-input-1 />
@@ -206,7 +206,7 @@ module('Integration | Modifier | autofocus', function (hooks) {
 
   test('should focus due to disabled parameter set to false', async function (assert) {
     await render(hbs`
-      <div {{autofocus disabled=false}}>
+      <div {{autofocus "input" disabled=false}}>
         <span>this is not a focusable element</span>
         <button type="button" data-test-button>this is a button</button>
         <input id="1" data-test-input-1 />
