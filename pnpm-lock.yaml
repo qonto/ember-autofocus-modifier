@@ -88,8 +88,8 @@ importers:
         specifier: ^6.0.4
         version: 6.0.4(@babel/core@7.23.0)(rollup@4.6.0)
       '@tsconfig/ember':
-        specifier: ^3.0.1
-        version: 3.0.1
+        specifier: ^3.0.3
+        version: 3.0.3
       '@typescript-eslint/eslint-plugin':
         specifier: ^6.7.4
         version: 6.7.4(@typescript-eslint/parser@6.18.1)(eslint@8.54.0)(typescript@5.3.2)
@@ -173,8 +173,8 @@ importers:
         specifier: 1.0.0-rc.0
         version: 1.0.0-rc.0(eslint@8.54.0)(typescript@5.3.2)
       '@tsconfig/ember':
-        specifier: ^3.0.1
-        version: 3.0.1
+        specifier: ^3.0.3
+        version: 3.0.3
       '@types/ember__component':
         specifier: ^4.0.18
         version: 4.0.18(@babel/core@7.23.0)
@@ -2702,8 +2702,8 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
-  /@tsconfig/ember@3.0.1:
-    resolution: {integrity: sha512-IBoECN9o9StxTZSy12eNSPdqiH5VzngD5Qx9YQDfteiXk9XyJhnyRQuBoU/MQCVnqau9fJpgKoA8Sy/0qItFXw==}
+  /@tsconfig/ember@3.0.3:
+    resolution: {integrity: sha512-StVVkcg/VxA+eDzBcTQAcnmmcmg1OxaV41OqFYluqVHpUX28TOD91DGg58n2AMU9ia27zeBBeVQiLsfmzuIV7w==}
     dev: true
 
   /@types/acorn@4.0.6:
