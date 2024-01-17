@@ -1,5 +1,12 @@
 
 
+## [7.0.1](https://github.com/qonto/ember-autofocus-modifier/compare/v7.0.0...v7.0.1) (2024-01-17)
+
+
+### Bug Fixes
+
+* **typing:** positional argument should extends Array<any> ([47b8b9b](https://github.com/qonto/ember-autofocus-modifier/commit/47b8b9bbf599e68546de41af6619ce709a148578))
+
 # [7.0.0](https://github.com/qonto/ember-autofocus-modifier/compare/v7.0.0-beta.0...v7.0.0) (2024-01-05)
 
 ## v7.0.0-beta.0 (2023-11-20)

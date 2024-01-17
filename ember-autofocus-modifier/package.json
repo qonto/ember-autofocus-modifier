@@ -1,6 +1,6 @@
 {
   "name": "ember-autofocus-modifier",
-  "version": "7.0.0",
+  "version": "7.0.1",
   "description": "Wraps a modifier to autofocus an element in the DOM.",
   "keywords": [
     "ember-addon"
