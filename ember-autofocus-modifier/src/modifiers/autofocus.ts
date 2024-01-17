@@ -16,7 +16,7 @@ const DEFAULT_SELECTOR =
 interface ModifierArgs {
   Element: HTMLElement;
   Args: {
-    Positional: [string?] | undefined; // Optional selector
+    Positional: [string?]; // Optional selector
     Named: {
       disabled?: boolean; // Optional 'disabled' parameter
     };
