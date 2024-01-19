@@ -1,8 +1,13 @@
 import { find, render, tab } from '@ember/test-helpers';
 import { setupRenderingTest } from 'ember-qunit';
 import { module, test } from 'qunit';
-
 import { hbs } from 'ember-cli-htmlbars';
+import type { TestContext as TestContextBase } from '@ember/test-helpers';
+import { defaultSelector } from 'ember-autofocus-modifier/modifiers/autofocus';
+
+interface TestContext extends TestContextBase {
+  defaultSelector: string;
+}
 
 module('Integration | Modifier | autofocus', function (hooks) {
   setupRenderingTest(hooks);
@@ -179,9 +184,11 @@ module('Integration | Modifier | autofocus', function (hooks) {
       .isNotFocused('The third non related input are not focused');
   });
 
-  test('should not focus due to disabled parameter set to true without providing a selector', async function (assert) {
-    await render(hbs`
-      <div {{autofocus "input" disabled=true}}>
+  test('should not focus due to disabled parameter set to true without providing a selector', async function (this: TestContext, assert) {
+    this.defaultSelector = defaultSelector;
+
+    await render<TestContext>(hbs`
+      <div {{autofocus this.defaultSelector disabled=true}}>
         <span>this is not a focusable element</span>
         <button type="button" data-test-button>this is a button</button>
         <input id="1" data-test-input-1 />
@@ -204,9 +211,11 @@ module('Integration | Modifier | autofocus', function (hooks) {
       .isNotFocused('The third non related input are not focused');
   });
 
-  test('should focus due to disabled parameter set to false', async function (assert) {
-    await render(hbs`
-      <div {{autofocus "input" disabled=false}}>
+  test('should focus due to disabled parameter set to false', async function (this: TestContext, assert) {
+    this.defaultSelector = defaultSelector;
+
+    await render<TestContext>(hbs`
+      <div {{autofocus this.defaultSelector disabled=false}}>
         <span>this is not a focusable element</span>
         <button type="button" data-test-button>this is a button</button>
         <input id="1" data-test-input-1 />
