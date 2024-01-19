@@ -23,7 +23,7 @@ interface ModifierArgs {
   };
 }
 
-export default modifier<ModifierArgs>(function autofocus(
+const autofocus = modifier<ModifierArgs>(function autofocus(
   element: HTMLElement,
   [selector] = [DEFAULT_SELECTOR],
   { disabled } = { disabled: false },
@@ -78,3 +78,5 @@ export default modifier<ModifierArgs>(function autofocus(
     }
   };
 });
+
+export { autofocus as default, DEFAULT_SELECTOR as defaultSelector };
