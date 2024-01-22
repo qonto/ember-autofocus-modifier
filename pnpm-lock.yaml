@@ -1947,7 +1947,6 @@ packages:
       typescript-memoize: 1.1.1
     transitivePeerDependencies:
       - supports-color
-    dev: true
 
   /@embroider/test-setup@3.0.3:
     resolution: {integrity: sha512-3K5KSyTdnxAkZQill6+TdC/XTRr6226LNwZMsrhRbBM0FFZXw2D8qmJSHPvZLheQx3A1jnF9t1lyrAzrKlg6Yw==}
@@ -6204,7 +6203,7 @@ packages:
       '@babel/plugin-proposal-decorators': 7.23.7(@babel/core@7.23.0)
       '@babel/preset-env': 7.22.20(@babel/core@7.23.0)
       '@embroider/macros': 1.13.0(@glint/template@1.2.1)
-      '@embroider/shared-internals': 2.5.0
+      '@embroider/shared-internals': 2.5.1
       babel-loader: 8.3.0(@babel/core@7.23.0)(webpack@5.88.2)
       babel-plugin-ember-modules-api-polyfill: 3.5.0
       babel-plugin-ember-template-compilation: 2.2.0
