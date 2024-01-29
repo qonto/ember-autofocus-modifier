@@ -24,8 +24,8 @@ importers:
         specifier: ^8.0.1
         version: 8.0.1(release-it@16.3.0)
       concurrently:
-        specifier: ^8.2.1
-        version: 8.2.1
+        specifier: ^8.2.2
+        version: 8.2.2
       lefthook:
         specifier: ^1.5.5
         version: 1.5.5
@@ -97,8 +97,8 @@ importers:
         specifier: ^6.19.0
         version: 6.19.0(eslint@8.54.0)(typescript@5.3.2)
       concurrently:
-        specifier: ^8.2.1
-        version: 8.2.1
+        specifier: ^8.2.2
+        version: 8.2.2
       ember-template-lint:
         specifier: ^5.11.2
         version: 5.11.2
@@ -197,8 +197,8 @@ importers:
         specifier: 3.0.0
         version: 3.0.0
       concurrently:
-        specifier: 8.2.1
-        version: 8.2.1
+        specifier: 8.2.2
+        version: 8.2.2
       ember-auto-import:
         specifier: 2.7.2
         version: 2.7.2(@glint/template@1.2.1)(webpack@5.88.2)
@@ -5313,8 +5313,8 @@ packages:
       typedarray: 0.0.6
     dev: true
 
-  /concurrently@8.2.1:
-    resolution: {integrity: sha512-nVraf3aXOpIcNud5pB9M82p1tynmZkrSGQ1p6X/VY8cJ+2LMVqAgXsJxYYefACSHbTYlm92O1xuhdGTjwoEvbQ==}
+  /concurrently@8.2.2:
+    resolution: {integrity: sha512-1dP4gpXFhei8IOtlXRE/T/4H88ElHgTiUzh71YUmtjTEHMSRS2Z/fgOxHSxxusGHogsRfxNq1vyAwxSC+EVyDg==}
     engines: {node: ^14.13.0 || >=16.0.0}
     hasBin: true
     dependencies:
