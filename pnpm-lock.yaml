@@ -182,8 +182,8 @@ importers:
         specifier: ^4.0.8
         version: 4.0.8(@babel/core@7.23.9)
       '@types/htmlbars-inline-precompile':
-        specifier: ^3.0.0
-        version: 3.0.0
+        specifier: ^3.0.3
+        version: 3.0.3
       '@types/qunit':
         specifier: ^2.19.10
         version: 2.19.10
@@ -2984,8 +2984,8 @@ packages:
       '@types/minimatch': 5.1.2
       '@types/node': 20.8.4
 
-  /@types/htmlbars-inline-precompile@3.0.0:
-    resolution: {integrity: sha512-n1YwM/Q937KmS9W4Ytran71nzhhcT2FDQI00eRGBNUyeErLZspBdDBewEe1F8tcRlUdsCVo2AZBLJsRjEceTRg==}
+  /@types/htmlbars-inline-precompile@3.0.3:
+    resolution: {integrity: sha512-utarMsjpGrHc67F0o4AitUwNOW8YWeF2JfAixWQoZIOy/tyIOxw/qHHQS5AnuazDa1Rt2Mlr9OlHDFD72QJMrA==}
     dev: true
 
   /@types/http-cache-semantics@4.0.2:
