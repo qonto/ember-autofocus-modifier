@@ -1296,18 +1296,6 @@ packages:
       '@babel/core': 7.23.9
       '@babel/helper-plugin-utils': 7.22.5
 
-  /@babel/plugin-transform-typescript@7.22.15(@babel/core@7.23.9):
-    resolution: {integrity: sha512-1uirS0TnijxvQLnlv5wQBwOX3E1wCFX7ITv+9pBV2wKEk4K+M5tqDaoNXnTH8tjEIYHLO98MwiTWO04Ggz4XuA==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/core': 7.23.9
-      '@babel/helper-annotate-as-pure': 7.22.5
-      '@babel/helper-create-class-features-plugin': 7.23.9(@babel/core@7.23.9)
-      '@babel/helper-plugin-utils': 7.22.5
-      '@babel/plugin-syntax-typescript': 7.23.3(@babel/core@7.23.9)
-
   /@babel/plugin-transform-typescript@7.23.6(@babel/core@7.23.9):
     resolution: {integrity: sha512-6cBG5mBvUu4VUD04OHKnYzbuHNP8huDsD3EDqqpIpsswTDoqHCjLoHb6+QgsV1WsT2nipRqCPgxD3LXnEO7XfA==}
     engines: {node: '>=6.9.0'}
@@ -6168,7 +6156,7 @@ packages:
       '@babel/plugin-proposal-private-property-in-object': 7.21.11(@babel/core@7.23.9)
       '@babel/plugin-transform-modules-amd': 7.23.0(@babel/core@7.23.9)
       '@babel/plugin-transform-runtime': 7.22.15(@babel/core@7.23.9)
-      '@babel/plugin-transform-typescript': 7.22.15(@babel/core@7.23.9)
+      '@babel/plugin-transform-typescript': 7.23.6(@babel/core@7.23.9)
       '@babel/polyfill': 7.12.1
       '@babel/preset-env': 7.22.20(@babel/core@7.23.9)
       '@babel/runtime': 7.12.18
