@@ -51,7 +51,7 @@
     "@glint/template": "^1.3.0",
     "@qonto/eslint-config-typescript": "1.0.0-rc.0",
     "@rollup/plugin-babel": "^6.0.4",
-    "@tsconfig/ember": "^3.0.3",
+    "@tsconfig/ember": "^3.0.5",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "concurrently": "^8.2.2",
