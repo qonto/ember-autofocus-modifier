@@ -42,7 +42,7 @@
     "@types/htmlbars-inline-precompile": "^3.0.3",
     "@types/qunit": "^2.19.10",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
+    "@typescript-eslint/parser": "^7.2.0",
     "broccoli-asset-rev": "3.0.0",
     "concurrently": "8.2.2",
     "ember-auto-import": "2.7.2",
