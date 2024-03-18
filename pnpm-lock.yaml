@@ -245,8 +245,8 @@ importers:
         specifier: 8.2.1
         version: 8.2.1(ember-source@4.12.2)
       ember-qunit:
-        specifier: 8.0.1
-        version: 8.0.1(@ember/test-helpers@3.2.1)(@glint/template@1.3.0)(ember-source@4.12.2)(qunit@2.20.0)
+        specifier: 8.0.2
+        version: 8.0.2(@ember/test-helpers@3.2.1)(@glint/template@1.3.0)(ember-source@4.12.2)(qunit@2.20.0)
       ember-resolver:
         specifier: 11.0.1
         version: 11.0.1(ember-source@4.12.2)
@@ -1296,18 +1296,6 @@ packages:
       '@babel/core': 7.23.9
       '@babel/helper-plugin-utils': 7.22.5
 
-  /@babel/plugin-transform-typescript@7.22.15(@babel/core@7.23.9):
-    resolution: {integrity: sha512-1uirS0TnijxvQLnlv5wQBwOX3E1wCFX7ITv+9pBV2wKEk4K+M5tqDaoNXnTH8tjEIYHLO98MwiTWO04Ggz4XuA==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/core': 7.23.9
-      '@babel/helper-annotate-as-pure': 7.22.5
-      '@babel/helper-create-class-features-plugin': 7.23.9(@babel/core@7.23.9)
-      '@babel/helper-plugin-utils': 7.22.5
-      '@babel/plugin-syntax-typescript': 7.23.3(@babel/core@7.23.9)
-
   /@babel/plugin-transform-typescript@7.23.6(@babel/core@7.23.9):
     resolution: {integrity: sha512-6cBG5mBvUu4VUD04OHKnYzbuHNP8huDsD3EDqqpIpsswTDoqHCjLoHb6+QgsV1WsT2nipRqCPgxD3LXnEO7XfA==}
     engines: {node: '>=6.9.0'}
@@ -1879,28 +1867,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@embroider/macros@1.13.2(@glint/template@1.3.0):
-    resolution: {integrity: sha512-AUgJ71xG8kjuTx8XB1AQNBiebJuXRfhcHr318dCwnQz9VRXdYSnEEqf38XRvGYIoCvIyn/3c72LrSwzaJqknOA==}
-    engines: {node: 12.* || 14.* || >= 16}
-    peerDependencies:
-      '@glint/template': ^1.0.0
-    peerDependenciesMeta:
-      '@glint/template':
-        optional: true
-    dependencies:
-      '@embroider/shared-internals': 2.5.0
-      '@glint/template': 1.3.0
-      assert-never: 1.2.1
-      babel-import-util: 2.0.1
-      ember-cli-babel: 7.26.11
-      find-up: 5.0.0
-      lodash: 4.17.21
-      resolve: 1.22.6
-      semver: 7.5.4
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /@embroider/macros@1.13.5(@glint/template@1.3.0):
     resolution: {integrity: sha512-OzYyM+bOcyV9IWma1qSraIyuBmGv6U8sCIHumHCe0oDDypvIvVA3csuDjoS3BGhUWV56VpzBSwVEDdIHXmqQ2w==}
     engines: {node: 12.* || 14.* || >= 16}
@@ -1939,23 +1905,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@embroider/shared-internals@2.5.0:
-    resolution: {integrity: sha512-7qzrb7GVIyNqeY0umxoeIvjDC+ay1b+wb2yCVuYTUYrFfLAkLEy9FNI3iWCi3RdQ9OFjgcAxAnwsAiPIMZZ3pQ==}
-    engines: {node: 12.* || 14.* || >= 16}
-    dependencies:
-      babel-import-util: 2.0.1
-      debug: 4.3.4
-      ember-rfc176-data: 0.3.18
-      fs-extra: 9.1.0
-      js-string-escape: 1.0.1
-      lodash: 4.17.21
-      resolve-package-path: 4.0.3
-      semver: 7.5.4
-      typescript-memoize: 1.1.1
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /@embroider/shared-internals@2.5.1:
     resolution: {integrity: sha512-b+TWDBisH1p6HeTbJIO8pgu1WzfTP0ZSAlZBqjXwOyrS0ZxP1qNYRrEX+IxyzIibEFjXBxeLakiejz3DJvZX5A==}
     engines: {node: 12.* || 14.* || >= 16}
@@ -1971,6 +1920,7 @@ packages:
       typescript-memoize: 1.1.1
     transitivePeerDependencies:
       - supports-color
+    dev: true
 
   /@embroider/shared-internals@2.5.2:
     resolution: {integrity: sha512-jNDJ9YlV6Qp9Na9v17qirUewVuq6T0t32nn+bbnFlCRTvmllKluZdYPSC5RuRnEZKTloVYRSF0+f1rgkTIEvxQ==}
@@ -1987,7 +1937,6 @@ packages:
       typescript-memoize: 1.1.1
     transitivePeerDependencies:
       - supports-color
-    dev: true
 
   /@embroider/test-setup@3.0.3:
     resolution: {integrity: sha512-3K5KSyTdnxAkZQill6+TdC/XTRr6226LNwZMsrhRbBM0FFZXw2D8qmJSHPvZLheQx3A1jnF9t1lyrAzrKlg6Yw==}
@@ -6095,7 +6044,7 @@ packages:
       '@babel/plugin-proposal-decorators': 7.23.9(@babel/core@7.23.9)
       '@babel/preset-env': 7.22.20(@babel/core@7.23.9)
       '@embroider/macros': 1.13.0(@glint/template@1.3.0)
-      '@embroider/shared-internals': 2.5.1
+      '@embroider/shared-internals': 2.5.2
       babel-loader: 8.3.0(@babel/core@7.23.9)(webpack@5.90.3)
       babel-plugin-ember-modules-api-polyfill: 3.5.0
       babel-plugin-ember-template-compilation: 2.2.0
@@ -6199,7 +6148,7 @@ packages:
       '@babel/plugin-proposal-private-property-in-object': 7.21.11(@babel/core@7.23.9)
       '@babel/plugin-transform-modules-amd': 7.23.0(@babel/core@7.23.9)
       '@babel/plugin-transform-runtime': 7.22.15(@babel/core@7.23.9)
-      '@babel/plugin-transform-typescript': 7.22.15(@babel/core@7.23.9)
+      '@babel/plugin-transform-typescript': 7.23.6(@babel/core@7.23.9)
       '@babel/polyfill': 7.12.1
       '@babel/preset-env': 7.22.20(@babel/core@7.23.9)
       '@babel/runtime': 7.12.18
@@ -6692,8 +6641,8 @@ packages:
       - supports-color
     dev: true
 
-  /ember-qunit@8.0.1(@ember/test-helpers@3.2.1)(@glint/template@1.3.0)(ember-source@4.12.2)(qunit@2.20.0):
-    resolution: {integrity: sha512-13PtywHNPTQKkDW4o8QRkJvcdsZr8hRyvh6xh/YLAX8+HaRLd3nPL8mBF4O/Kur/DAj3QWLvjzktZ2uRNGSh3A==}
+  /ember-qunit@8.0.2(@ember/test-helpers@3.2.1)(@glint/template@1.3.0)(ember-source@4.12.2)(qunit@2.20.0):
+    resolution: {integrity: sha512-Rf60jeUTWNsF3Imf/FLujW/B/DFmKVXKmXO1lirTXjpertKfwRhp/3MnN8a/U/WyodTIsERkInGT1IqTtphCdQ==}
     peerDependencies:
       '@ember/test-helpers': '>=3.0.3'
       ember-source: 4.12.2
@@ -6701,7 +6650,7 @@ packages:
     dependencies:
       '@ember/test-helpers': 3.2.1(@glint/template@1.3.0)(ember-source@4.12.2)(webpack@5.90.3)
       '@embroider/addon-shim': 1.8.7
-      '@embroider/macros': 1.13.2(@glint/template@1.3.0)
+      '@embroider/macros': 1.13.5(@glint/template@1.3.0)
       ember-cli-test-loader: 3.1.0
       ember-source: 4.12.2(@babel/core@7.23.9)(@glimmer/component@1.1.2)(@glint/template@1.3.0)(webpack@5.90.3)
       qunit: 2.20.0
