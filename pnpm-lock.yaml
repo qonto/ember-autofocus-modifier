@@ -52,8 +52,8 @@ importers:
         specifier: ^7.23.9
         version: 7.23.9
       '@babel/eslint-parser':
-        specifier: ^7.22.15
-        version: 7.22.15(@babel/core@7.23.9)(eslint@8.56.0)
+        specifier: ^7.23.10
+        version: 7.23.10(@babel/core@7.23.9)(eslint@8.56.0)
       '@babel/plugin-proposal-class-properties':
         specifier: ^7.18.6
         version: 7.18.6(@babel/core@7.23.9)
@@ -137,8 +137,8 @@ importers:
         version: link:../ember-autofocus-modifier
     devDependencies:
       '@babel/eslint-parser':
-        specifier: ^7.22.15
-        version: 7.22.15(@babel/core@7.23.9)(eslint@8.56.0)
+        specifier: ^7.23.10
+        version: 7.23.10(@babel/core@7.23.9)(eslint@8.56.0)
       '@ember/optional-features':
         specifier: 2.0.0
         version: 2.0.0
@@ -358,8 +358,8 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@babel/eslint-parser@7.22.15(@babel/core@7.23.9)(eslint@8.56.0):
-    resolution: {integrity: sha512-yc8OOBIQk1EcRrpizuARSQS0TWAcOMpEJ1aafhNznaeYkeL+OhqnDObGFylB8ka8VFF/sZc+S4RzHyO+3LjQxg==}
+  /@babel/eslint-parser@7.23.10(@babel/core@7.23.9)(eslint@8.56.0):
+    resolution: {integrity: sha512-3wSYDPZVnhseRnxRJH6ZVTNknBz76AEnyC+AYYhasjP3Yy23qz0ERR7Fcd2SHmYuSFJ2kY9gaaDd3vyqU09eSw==}
     engines: {node: ^10.13.0 || ^12.13.0 || >=14.0.0}
     peerDependencies:
       '@babel/core': ^7.11.0
