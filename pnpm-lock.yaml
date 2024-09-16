@@ -248,8 +248,8 @@ importers:
         specifier: 8.0.2
         version: 8.0.2(@ember/test-helpers@3.2.1)(@glint/template@1.4.0)(ember-source@4.12.2)(qunit@2.20.0)
       ember-resolver:
-        specifier: 11.0.1
-        version: 11.0.1(ember-source@4.12.2)
+        specifier: 13.0.1
+        version: 13.0.1(ember-source@4.12.2)
       ember-source:
         specifier: 4.12.2
         version: 4.12.2(@babel/core@7.23.9)(@glimmer/component@1.1.2)(@glint/template@1.4.0)(webpack@5.90.3)
@@ -6660,8 +6660,8 @@ packages:
       - supports-color
     dev: true
 
-  /ember-resolver@11.0.1(ember-source@4.12.2):
-    resolution: {integrity: sha512-ucBk3oM+PR+AfYoSUXeQh8cDQS1sSiEKp4Pcgbew5cFMSqPxJfqd1zyZsfQKNTuyubeGmWxBOyMVSTvX2LeCyg==}
+  /ember-resolver@13.0.1(ember-source@4.12.2):
+    resolution: {integrity: sha512-+F0lX8P9pBwE1hf8PMhe7ftT3f9PQSQwIXPN1qc9Aiij5V/GDVTdd+j4+CSj6tCHlf6ylADGxs4c6mofs/sDvQ==}
     engines: {node: 14.* || 16.* || >= 18}
     peerDependencies:
       ember-source: 4.12.2
