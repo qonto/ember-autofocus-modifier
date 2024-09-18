@@ -1,5 +1,5 @@
 import { modifier } from "ember-modifier";
-import { next } from "@ember/runloop";
+import { runTask } from "ember-lifeline";
 
 const focusableElements = [
   "BUTTON",
@@ -68,7 +68,7 @@ const autofocus = modifier<ModifierArgs>(function autofocus(
     element.setAttribute("tabindex", "-1");
   }
 
-  next(function () {
+  runTask(element, function () {
     targetElement.focus();
   });
 
