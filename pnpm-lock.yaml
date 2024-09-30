@@ -46,7 +46,7 @@ importers:
         version: 7.0.0
       ember-modifier:
         specifier: ^4.1.0
-        version: 4.1.0
+        version: 4.1.0(ember-source@4.12.2)
       ember-source:
         specifier: 4.12.2
         version: 4.12.2(@babel/core@7.23.9)(@glimmer/component@1.1.2)(@glint/template@1.4.0)(webpack@5.94.0)
@@ -275,8 +275,8 @@ importers:
         specifier: 12.2.0
         version: 12.2.0(@babel/core@7.23.9)(@typescript-eslint/parser@8.6.0)(eslint@8.56.0)
       eslint-plugin-n:
-        specifier: 16.6.2
-        version: 16.6.2(eslint@8.56.0)
+        specifier: 17.10.3
+        version: 17.10.3(eslint@8.56.0)
       eslint-plugin-node:
         specifier: 11.1.0
         version: 11.1.0(eslint@8.56.0)
@@ -2206,7 +2206,7 @@ packages:
     dependencies:
       '@glimmer/component': 1.1.2(@babel/core@7.23.9)
       '@glint/template': 1.4.0
-      ember-modifier: 4.1.0
+      ember-modifier: 4.1.0(ember-source@4.12.2)
     dev: true
 
   /@glint/template@1.4.0:
@@ -4730,11 +4730,6 @@ packages:
       ieee754: 1.2.1
     dev: true
 
-  /builtin-modules@3.3.0:
-    resolution: {integrity: sha512-zhaCDicdLuWN5UbN5IMnFqNMhNfo919sH85y2/ea+5Yg9TsTkeZxpL+JLbp6cgYFS4sRLp3YV4S6yDuqVWHYOw==}
-    engines: {node: '>=6'}
-    dev: true
-
   /builtins@5.0.1:
     resolution: {integrity: sha512-qwVpFEHNfhYJIzNRBvd2C1kyo6jz3ZSMPyyuR47OPdiKWlbYnZNyDWuyR175qDnAJLiCo5fBBqPb3RiXgWlkOQ==}
     dependencies:
@@ -6723,7 +6718,7 @@ packages:
       - supports-color
     dev: true
 
-  /ember-modifier@4.1.0:
+  /ember-modifier@4.1.0(ember-source@4.12.2):
     resolution: {integrity: sha512-YFCNpEYj6jdyy3EjslRb2ehNiDvaOrXTilR9+ngq+iUqSHYto2zKV0rleiA1XJQ27ELM1q8RihT29U6Lq5EyqQ==}
     peerDependencies:
       ember-source: 4.12.2
@@ -6734,6 +6729,7 @@ packages:
       '@embroider/addon-shim': 1.8.7
       ember-cli-normalize-entity-name: 1.0.0
       ember-cli-string-utils: 1.1.0
+      ember-source: 4.12.2(@babel/core@7.23.9)(@glimmer/component@1.1.2)(@glint/template@1.4.0)(webpack@5.94.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -7236,24 +7232,21 @@ packages:
       regexpp: 3.2.0
     dev: true
 
-  /eslint-plugin-n@16.6.2(eslint@8.56.0):
-    resolution: {integrity: sha512-6TyDmZ1HXoFQXnhCTUjVFULReoBPOAjpuiKELMkeP40yffI/1ZRO+d9ug/VC6fqISo2WkuIBk3cvuRPALaWlOQ==}
-    engines: {node: '>=16.0.0'}
+  /eslint-plugin-n@17.10.3(eslint@8.56.0):
+    resolution: {integrity: sha512-ySZBfKe49nQZWR1yFaA0v/GsH6Fgp8ah6XV0WDz6CN8WO0ek4McMzb7A2xnf4DCYV43frjCygvb9f/wx7UUxRw==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
-      eslint: '>=7.0.0'
+      eslint: '>=8.23.0'
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.56.0)
-      builtins: 5.0.1
+      enhanced-resolve: 5.17.1
       eslint: 8.56.0
       eslint-plugin-es-x: 7.5.0(eslint@8.56.0)
       get-tsconfig: 4.7.2
-      globals: 13.24.0
+      globals: 15.9.0
       ignore: 5.2.4
-      is-builtin-module: 3.2.1
-      is-core-module: 2.13.0
-      minimatch: 3.1.2
-      resolve: 1.22.6
-      semver: 7.5.4
+      minimatch: 9.0.5
+      semver: 7.6.3
     dev: true
 
   /eslint-plugin-node@11.1.0(eslint@8.56.0):
@@ -8428,6 +8421,11 @@ packages:
       type-fest: 0.20.2
     dev: true
 
+  /globals@15.9.0:
+    resolution: {integrity: sha512-SmSKyLLKFbSr6rptvP8izbyxJL4ILwqO9Jg23UA0sDlGlu58V59D1//I3vlc0KJphVdUR7vMjHIplYnzBxorQA==}
+    engines: {node: '>=18'}
+    dev: true
+
   /globalthis@1.0.3:
     resolution: {integrity: sha512-sFdI5LyBiNTHjRd7cGPWapiHWMOXKyuBNX/cWJ3NfzrZQVa8GI/8cofCl74AOVqq9W5kNmguTIzJ/1s2gyI9wA==}
     engines: {node: '>= 0.4'}
@@ -9117,13 +9115,6 @@ packages:
 
   /is-buffer@1.1.6:
     resolution: {integrity: sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==}
-    dev: true
-
-  /is-builtin-module@3.2.1:
-    resolution: {integrity: sha512-BSLE3HnV2syZ0FK0iMA/yUGplUeMmNz4AW5fnTunbCIqZi4vG3WjJT9FHMy5D69xmAYBHXQhJdALdpwVxV501A==}
-    engines: {node: '>=6'}
-    dependencies:
-      builtin-modules: 3.3.0
     dev: true
 
   /is-callable@1.2.7:
