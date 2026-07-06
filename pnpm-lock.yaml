@@ -63,6 +63,9 @@ importers:
       '@babel/preset-typescript':
         specifier: ^7.29.7
         version: 7.29.7(@babel/core@7.29.7)
+      '@ember/library-tsconfig':
+        specifier: ^2.0.0
+        version: 2.0.0
       '@embroider/addon-dev':
         specifier: ^8.3.1
         version: 8.3.1(@glint/template@1.7.8)(rollup@4.62.2)
@@ -81,9 +84,6 @@ importers:
       '@rollup/plugin-babel':
         specifier: ^7.1.0
         version: 7.1.0(@babel/core@7.29.7)(rollup@4.62.2)
-      '@tsconfig/ember':
-        specifier: ^3.0.12
-        version: 3.0.12
       concurrently:
         specifier: ^10.0.3
         version: 10.0.3
@@ -127,6 +127,9 @@ importers:
         specifier: 7.0.1
         version: link:../ember-autofocus-modifier
     devDependencies:
+      '@ember/app-tsconfig':
+        specifier: ^2.0.0
+        version: 2.0.0
       '@ember/optional-features':
         specifier: 3.0.0
         version: 3.0.0(@types/node@20.8.4)
@@ -157,9 +160,6 @@ importers:
       '@glint/template':
         specifier: ^1.7.8
         version: 1.7.8
-      '@tsconfig/ember':
-        specifier: ^3.0.12
-        version: 3.0.12
       '@types/ember__component':
         specifier: ^4.0.22
         version: 4.0.22(@babel/core@7.29.7)
@@ -2017,8 +2017,16 @@ packages:
       walk-sync: 4.0.2
     dev: true
 
+  /@ember/app-tsconfig@2.0.0:
+    resolution: {integrity: sha512-NmD1OZFtCF49k4WDaPdhGP4OKoRbPaXpTBO3AsJe0okIJeCVUiEiC8YUpfTJmld9EJOEa9mW/p0tJQS70GktOA==}
+    dev: true
+
   /@ember/edition-utils@1.2.0:
     resolution: {integrity: sha512-VmVq/8saCaPdesQmftPqbFtxJWrzxNGSQ+e8x8LLe3Hjm36pJ04Q8LeORGZkAeOhldoUX9seLGmSaHeXkIqoog==}
+    dev: true
+
+  /@ember/library-tsconfig@2.0.0:
+    resolution: {integrity: sha512-DTGt9TYZ3bhObUviQXx4C0v46oWM7HsRrUTbgONw2QBhJVHlmXA89uXenlvuqVrCQkA0g5kz7wwyOlcjIZ8h0w==}
     dev: true
 
   /@ember/optional-features@3.0.0(@types/node@20.8.4):
@@ -3628,11 +3636,6 @@ packages:
 
   /@tootallnate/quickjs-emscripten@0.23.0:
     resolution: {integrity: sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==}
-    dev: true
-
-  /@tsconfig/ember@3.0.12:
-    resolution: {integrity: sha512-ypFTXqIzQAB5HpYPi4TwDElDcUheWrKsEaYXgjiCAvsH6zxcQ4zUeuJqmfT+FoUlHTPZ3Xyel81OxrcjI+rilw==}
-    deprecated: Please use @ember/app-tsconfig or @ember/library-tsconfig instead. These live at https://github.com/ember-cli/tsconfigs
     dev: true
 
   /@tybys/wasm-util@0.10.3:

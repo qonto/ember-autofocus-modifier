@@ -1,11 +1,12 @@
 {
-  "extends": "@tsconfig/ember/tsconfig.json",
+  "extends": "@ember/library-tsconfig/tsconfig.json",
   "include": ["src/**/*", "unpublished-development-types/**/*"],
   "glint": {
     "environment": "ember-loose"
   },
   "compilerOptions": {
     "allowJs": false,
+    "rootDir": "src",
     "declarationDir": "declarations",
     "skipLibCheck": true
   }

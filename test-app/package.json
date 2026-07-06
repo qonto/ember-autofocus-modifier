@@ -34,7 +34,6 @@
     "@glint/core": "^1.5.2",
     "@glint/environment-ember-loose": "^1.5.2",
     "@glint/template": "^1.7.8",
-    "@tsconfig/ember": "^3.0.12",
     "@types/ember__component": "^4.0.22",
     "@types/ember__object": "^4.0.12",
     "@types/htmlbars-inline-precompile": "^3.0.4",
@@ -77,7 +76,8 @@
     "release-it": "16.3.0",
     "typescript": "^6.0.3",
     "typescript-eslint": "8.62.1",
-    "webpack": "5.108.4"
+    "webpack": "5.108.4",
+    "@ember/app-tsconfig": "^2.0.0"
   },
   "engines": {
     "node": ">= 22"
