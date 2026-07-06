@@ -6,6 +6,10 @@
   "repository": "",
   "license": "MIT",
   "author": "",
+  "exports": {
+    "./tests/*": "./tests/*",
+    "./*": "./app/*"
+  },
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -19,16 +23,19 @@
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
     "lint:types": "glint",
-    "start": "ember serve",
+    "start": "vite",
     "test": "concurrently \"pnpm:lint\" \"pnpm:test:*\" --names \"lint,test:\"",
-    "test:ember": "ember test"
+    "test:ember": "vite build --mode development && ember test --path dist"
   },
   "devDependencies": {
+    "@babel/core": "^7.29.7",
+    "@babel/plugin-transform-runtime": "^7.29.7",
+    "@babel/preset-typescript": "^8.0.1",
+    "@babel/runtime": "^7.29.7",
     "@ember/optional-features": "3.0.0",
     "@ember/string": "4.0.1",
     "@ember/test-helpers": "5.4.3",
     "@embroider/macros": "1.20.5",
-    "@embroider/test-setup": "4.0.0",
     "@glimmer/component": "^2.1.1",
     "@glimmer/tracking": "^1.1.2",
     "@glint/core": "^1.5.2",
@@ -40,6 +47,7 @@
     "@types/qunit": "^2.19.14",
     "broccoli-asset-rev": "3.0.0",
     "concurrently": "10.0.3",
+    "decorator-transforms": "^2.4.0",
     "ember-auto-import": "2.13.1",
     "ember-cli": "7.1.0",
     "ember-cli-app-version": "7.0.0",
@@ -76,8 +84,13 @@
     "release-it": "19.2.4",
     "typescript": "^6.0.3",
     "typescript-eslint": "8.62.1",
-    "webpack": "5.108.4",
-    "@ember/app-tsconfig": "^2.0.0"
+    "@ember/app-tsconfig": "^2.0.0",
+    "@embroider/config-meta-loader": "^1.0.0",
+    "@embroider/core": "^4.6.2",
+    "@embroider/compat": "^4.1.21",
+    "@embroider/vite": "^1.7.8",
+    "@rollup/plugin-babel": "^7.1.0",
+    "vite": "^8.1.0"
   },
   "engines": {
     "node": ">= 22"

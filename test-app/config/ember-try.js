@@ -1,7 +1,6 @@
 'use strict';
 
 const getChannelURL = require('ember-source-channel-url');
-const { embroiderSafe, embroiderOptimized } = require('@embroider/test-setup');
 
 module.exports = async function () {
   return {
@@ -55,24 +54,18 @@ module.exports = async function () {
           },
         },
       },
-      embroiderSafe({
+      {
+        name: 'embroider-vite',
+        command: 'pnpm run test:ember',
         npm: {
           devDependencies: {
             '@embroider/compat': '^4.1.21',
             '@embroider/core': '^4.6.2',
-            '@embroider/webpack': '^4.1.2',
+            '@embroider/vite': '^1.7.8',
+            vite: '^8.1.0',
           },
         },
-      }),
-      embroiderOptimized({
-        npm: {
-          devDependencies: {
-            '@embroider/compat': '^4.1.21',
-            '@embroider/core': '^4.6.2',
-            '@embroider/webpack': '^4.1.2',
-          },
-        },
-      }),
+      },
     ],
   };
 };

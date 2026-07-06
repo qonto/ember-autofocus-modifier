@@ -59,8 +59,7 @@ jobs:
           - ember-release
           - ember-beta
           - ember-canary
-          - embroider-safe
-          - embroider-optimized
+          - embroider-vite
     steps:
       - name: Checkout
         uses: actions/checkout@v4
