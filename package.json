@@ -32,18 +32,13 @@
     "release-it": "^16.3.0"
   },
   "engines": {
-    "node": ">= 18"
+    "node": ">= 22"
   },
   "volta": {
-    "node": "18.14.2"
+    "node": "22.14.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
-  "packageManager": "pnpm@8.11.0",
-  "pnpm": {
-    "overrides": {
-      "ember-source": "4.12.2"
-    }
-  }
+  "packageManager": "pnpm@8.11.0"
 }
