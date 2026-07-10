@@ -94,10 +94,11 @@ jobs:
           node-version: 22.x
           args: "--frozen-lockfile"
       - name: Update TS version on addon package
-        run: pnpm add -D ${{ matrix.typescript-scenario }}
+        run: pnpm add -D ${{ matrix.typescript-scenario }} --ignore-scripts
         working-directory: ember-autofocus-modifier
       - name: Update TS version on test-app package
-        run: pnpm add -D ${{ matrix.typescript-scenario }}
+        run: pnpm add -D ${{ matrix.typescript-scenario }} --ignore-scripts
         working-directory: test-app
       - name: Type checking
         run: pnpm lint:types
+        continue-on-error: ${{ matrix.typescript-scenario == 'typescript@next' }}
