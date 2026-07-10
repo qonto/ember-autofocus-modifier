@@ -78,17 +78,12 @@ jobs:
 
     needs: [test]
 
-    # typescript@next may fail due to glint incompatibility with TS nightlies
-    continue-on-error: ${{ matrix.allowed-failure }}
-
     strategy:
       fail-fast: false
       matrix:
-        include:
-          - typescript-scenario: typescript@6.0
-            allowed-failure: false
-          - typescript-scenario: typescript@next
-            allowed-failure: true
+        typescript-scenario:
+          - typescript@6.0
+          - typescript@next
 
     steps:
       - name: Checkout
@@ -106,3 +101,4 @@ jobs:
         working-directory: test-app
       - name: Type checking
         run: pnpm lint:types
+        continue-on-error: ${{ matrix.typescript-scenario == 'typescript@next' }}
