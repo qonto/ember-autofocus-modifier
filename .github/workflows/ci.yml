@@ -78,12 +78,17 @@ jobs:
 
     needs: [test]
 
+    # typescript@next may fail due to glint incompatibility with TS nightlies
+    continue-on-error: ${{ matrix.allowed-failure }}
+
     strategy:
       fail-fast: false
       matrix:
-        typescript-scenario:
-          - typescript@6.0
-          - typescript@next
+        include:
+          - typescript-scenario: typescript@6.0
+            allowed-failure: false
+          - typescript-scenario: typescript@next
+            allowed-failure: true
 
     steps:
       - name: Checkout
