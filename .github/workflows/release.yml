@@ -23,7 +23,7 @@ jobs:
       - name: Install pnpm
         uses: wyvox/action-setup-pnpm@v3
         with:
-          node-version: 18.x
+          node-version: 22.x
           node-registry-url: "https://registry.npmjs.org"
 
       - name: Trigger release script
