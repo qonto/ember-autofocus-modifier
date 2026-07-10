@@ -22,28 +22,23 @@
     "test": "pnpm --filter '*' test"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.5.0",
-    "@commitlint/config-conventional": "^18.6.0",
-    "@release-it-plugins/workspaces": "^4.0.0",
-    "@release-it/conventional-changelog": "^9.0.1",
-    "concurrently": "^8.2.2",
-    "lefthook": "^1.6.8",
-    "prettier": "^3.2.4",
-    "release-it": "^16.3.0"
+    "@commitlint/cli": "^21.2.0",
+    "@commitlint/config-conventional": "^21.2.0",
+    "@release-it-plugins/workspaces": "^6.0.0",
+    "@release-it/conventional-changelog": "^11.0.1",
+    "concurrently": "^10.0.3",
+    "lefthook": "^2.1.9",
+    "prettier": "^3.9.4",
+    "release-it": "^19.2.4"
   },
   "engines": {
-    "node": ">= 18"
+    "node": ">= 22"
   },
   "volta": {
-    "node": "18.14.2"
+    "node": "22.14.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
-  "packageManager": "pnpm@8.11.0",
-  "pnpm": {
-    "overrides": {
-      "ember-source": "4.12.2"
-    }
-  }
+  "packageManager": "pnpm@8.15.9+sha512.499434c9d8fdd1a2794ebf4552b3b25c0a633abcee5bb15e7b5de90f32f47b513aca98cd5cfd001c31f0db454bc3804edccd578501e4ca293a6816166bbd9f81"
 }
