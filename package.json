@@ -27,7 +27,7 @@
     "@release-it-plugins/workspaces": "^6.0.0",
     "@release-it/conventional-changelog": "^11.0.1",
     "concurrently": "^10.0.3",
-    "lefthook": "^2.1.9",
+    "lefthook": "^2.1.10",
     "prettier": "^3.9.4",
     "release-it": "^19.2.4"
   },
