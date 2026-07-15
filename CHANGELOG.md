@@ -1,4 +1,29 @@
+# Changelog
 
+# [8.0.0](https://github.com/qonto/ember-autofocus-modifier/compare/v7.0.1...v8.0.0) (2026-07-15)
+
+
+* feat!: support Ember 5.12, 6.8, 6.12 and 7.x, drop legacy Ember/Node support ([78eda61](https://github.com/qonto/ember-autofocus-modifier/commit/78eda61f939e242c4e98ee8177df7bd077de5bc2))
+
+
+### Bug Fixes
+
+* allow typescript@next CI job to fail without blocking ([40f5e38](https://github.com/qonto/ember-autofocus-modifier/commit/40f5e38d9ab64a9917245eea85c9bf0224868a47))
+* **ci:** use master branch instead of main branch ([161d45a](https://github.com/qonto/ember-autofocus-modifier/commit/161d45a3f6d330dd994cd5fc2528dd86180715d5))
+* move continue-on-error to step level for typescript@next ([eef0f8f](https://github.com/qonto/ember-autofocus-modifier/commit/eef0f8f37ca6906e735934c5b14f416e4ffa77bf))
+* **release:** disable frozen-lockfile to fix release-it workspaces install ([3afd7f6](https://github.com/qonto/ember-autofocus-modifier/commit/3afd7f69f74c249434a7b8f2b919680a65be8ab7))
+* skip lifecycle scripts when swapping TS version in CI ([931f0a2](https://github.com/qonto/ember-autofocus-modifier/commit/931f0a2d2769ad4f3002bf67dabe2bb1cdcd8106))
+
+
+### Features
+
+* export constant for default selector ([6e47874](https://github.com/qonto/ember-autofocus-modifier/commit/6e47874be458450297746358594f45054f79ef59))
+
+
+### BREAKING CHANGES
+
+* drops support for Ember versions below 5.12. Consumers
+must upgrade to ember-source ^5.12.0, ^6.8.0, ^6.12.0, or ^7.0.0.
 
 ## [7.0.1](https://github.com/qonto/ember-autofocus-modifier/compare/v7.0.0...v7.0.1) (2024-01-17)
 

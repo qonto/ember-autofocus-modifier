@@ -124,7 +124,7 @@ importers:
   test-app:
     dependencies:
       ember-autofocus-modifier:
-        specifier: 7.0.1
+        specifier: 8.0.0
         version: link:../ember-autofocus-modifier
     devDependencies:
       '@babel/core':
