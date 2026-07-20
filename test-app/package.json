@@ -90,7 +90,7 @@
     "@embroider/compat": "^4.1.21",
     "@embroider/vite": "^1.7.8",
     "@rollup/plugin-babel": "^7.1.0",
-    "vite": "^8.1.0"
+    "vite": "^8.1.5"
   },
   "engines": {
     "node": ">= 22"
