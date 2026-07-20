@@ -82,7 +82,7 @@
     "qunit": "2.26.0",
     "qunit-dom": "3.5.1",
     "release-it": "19.2.4",
-    "typescript": "^6.0.3",
+    "typescript": "^7.0.2",
     "typescript-eslint": "8.62.1",
     "@ember/app-tsconfig": "^2.0.0",
     "@embroider/config-meta-loader": "^1.0.0",
