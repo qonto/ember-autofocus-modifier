@@ -26,7 +26,7 @@
     "@commitlint/config-conventional": "^21.2.0",
     "@release-it-plugins/workspaces": "^6.0.0",
     "@release-it/conventional-changelog": "^11.0.1",
-    "concurrently": "^10.0.3",
+    "concurrently": "^10.0.4",
     "lefthook": "^2.1.9",
     "prettier": "^3.9.4",
     "release-it": "^19.2.4"
