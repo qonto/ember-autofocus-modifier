@@ -40,7 +40,7 @@
     "@glimmer/tracking": "^1.1.2",
     "@glint/core": "^1.5.2",
     "@glint/environment-ember-loose": "^1.5.2",
-    "@glint/template": "^1.7.8",
+    "@glint/template": "^1.7.9",
     "@types/ember__component": "^4.0.22",
     "@types/ember__object": "^4.0.12",
     "@types/htmlbars-inline-precompile": "^3.0.4",
